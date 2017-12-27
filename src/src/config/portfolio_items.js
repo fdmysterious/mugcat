@@ -14,7 +14,7 @@ const portfolio_items = [
 
                 url : {
                     demo   : "https://mugcat.fr/fr",
-                    source : "https://github.com/fdmysterious"
+                    source : "https://github.com/fdmysterious/mugcat/"
                 }
             }
         }
@@ -35,7 +35,7 @@ const portfolio_items = [
                 
                 url : {
                     demo   : "https://demos.mugcat.fr/ballinatone",
-                    source : "https://github.com/fdmysterious"
+                    source : "https://github.com/fdmysterious/mugcat-demos/tree/master/ballinatone/"
                 }
             }
         }
