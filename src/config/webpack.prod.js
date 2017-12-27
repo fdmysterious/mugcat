@@ -24,7 +24,7 @@ const PrerenderSpaPlugin = require('prerender-spa-plugin')
 // Routes to render //
 // TODO // Automate this stuff
 const render_routes = [
-    "/"
+    "/",
     "/fr",
     "/fr/about",
     "/fr/project/sten",
