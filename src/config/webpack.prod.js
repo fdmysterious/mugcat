@@ -27,7 +27,7 @@ const render_routes = [
     "/",
     "/fr",
     "/fr/about",
-    "/fr/project/sten",
+    "/fr/projects/sten",
     "/fr/portfolio",
     "/fr/portfolio/ballinatone",
 
