@@ -147,7 +147,7 @@ Exemple de fichier Sten
 
     <h2>Parser</h2>
     <p>
-        À l'heure actuelle, je prototype un parser python trouvable à <a href="#">cette adresse</a>.
+        À l'heure actuelle, je prototype un parser python qui sera bientôt publié sur github.
         Le but est d'arriver à tester et ajuster les différentes fonctionnalités du langage. Cet utilitaire
         permet pour l'instant d'exporter le fichier en mind-map freemind.
 
