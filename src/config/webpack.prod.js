@@ -44,7 +44,7 @@ module.exports = merge( config_common('prod'), {
         }),
 
         new webpack.DefinePlugin({
-            'precess.env': {
+            'process.env': {
                 'NODE_ENV': JSON.stringify('production')
             }
         }),

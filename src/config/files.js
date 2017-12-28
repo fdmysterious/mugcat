@@ -88,7 +88,9 @@ const generate = {
                 options : {
                     loaders : {
                         'scss' : generate.scss.loaders()
-                    }
+                    },
+
+                    extractCSS : env === "production"
                 }
             }
         }

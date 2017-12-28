@@ -5,7 +5,7 @@
   "author": "Florian Dupeyron <florian.dupeyron@mugcat.fr>",
   "private": true,
   "scripts": {
-    "build:dev" : "webpack --env=dev  --display-error-details --progress --profile --colors",
+    "build:dev" : "webpack --env=dev --display-error-details --progress --profile --colors",
     "build:prod": "webpack --env=prod --progress --profile --colors --hide-modules",
     "start"     : "webpack-dev-server --env=dev --hot"
   },
