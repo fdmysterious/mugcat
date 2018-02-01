@@ -1,10 +1,21 @@
 <template lang="pug">
-main.main-wrapper( role="main" key="main-wrapper" )
-        slot
+div
+    main.main-wrapper( role="main" key="main-wrapper" )
+            slot
+    main-footer
 </template>
 
 <script lang="ts">
-export default{}
+import Vue from "vue"
+import { Component } from "vue-property-decorator"
+
+import mainFooter from 'components/main-footer'
+
+@Component({
+    components : { mainFooter }
+})
+export default class MainHeader extends Vue
+{}
 </script>
 
 <style lang="scss">

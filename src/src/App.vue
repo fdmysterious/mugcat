@@ -12,11 +12,12 @@ import { Component, Prop, Watch } from 'vue-property-decorator'
 
 import mainBackground from './components/main-background.vue'
 import mainHeader     from './components/main-header.vue'
+import mainFooter     from './components/main-footer.vue'
 
 import { scroll_handler } from "./config/router";
 
 @Component({
-    components : { mainBackground, mainHeader }
+    components : { mainBackground, mainHeader, mainFooter }
 })
 export default class App extends Vue
 {
