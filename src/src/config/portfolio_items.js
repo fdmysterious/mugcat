@@ -1,7 +1,7 @@
 const portfolio_items = [
     {
         id   : "mugcat",
-        date : new Date( "12-00-2017" ),
+        date : new Date( "12-01-2017" ),
         img  : "mugcat",
 
         lang : {
@@ -9,7 +9,7 @@ const portfolio_items = [
                 name : "mugcat.fr",
                 desc : {
                     "short" : "Réalisation de mon site personnel",
-                    "long"  : "<p>Site réalisé avec l'aide de <a href='https://vuejs.org' target='_blank'>VueJS</a>, attiré principalement par la structuration en composants et les fonctionnalités apportées (router, transitions entre autres). Le résultat peut-être cependant encore grandement amélioré, notamment au niveau de la gestion des routes/contenu des pages/prérendu qui est pour l'instant complètement manuelle, ainsi que certaines parties du codes un peu bidouillées (gestion du scroll vers l'ancre sélectionnée notamment).</p><p>J'ai pour l'instant choisi vue et non pas React ni Angular pour sa simplicité de mise en place, et le format monofichier .vue qui fait la distinction entre la template, le code et l'apparence. Cela ne m'empêche pas d'apprendre React pour l'avoir dans ma boîte à outils.</p><p>Pour l'animation des triangles en fond, j'utilise <a href='https://github.com/yahiko00/delaunay' target='_blank'>cette implémentation</a> de la triangulation de Delaunay. Un de mes objectifs est de réimplémenter cet algorithme à des fins pédagogiques.</p><p>Il n'y a également pas de tests unitaires dans les sources car pour l'instant le code est très simple, mais c'est au programme ! :p</p>"
+                    "long"  : "<p>Site réalisé avec <a target='_blank' href='https://vuejs.org'>VueJS</a>, attiré par la structuration en composants et les possibilités de dynamisation. Prenait part tout de même à une démarche expérimentale, visant à déterminer s'il est possible de faire un site web cohérent avec cet outil. Pour l'instant, la réponse est non : code source un peu ambigu par endroit, pas de chargement dynamique des pages pour l'instant (tout le contenu du site est dans le js), quelques fonctionnalités utiles manquantes (scroll vers l'ancre d'une page).</p><p>C'est donc une solution satisfaisante pour un petit site interactif comme celui-ci, mais très loin d'être parfaite.</p>"
                 },
 
                 url : {
