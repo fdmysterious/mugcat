@@ -1,0 +1,10 @@
+extends ../../../template-parts/layout-error.pug
+
+block error_desc
+    - error_desc.status = "414"
+    - error_desc.text   = "URI trop grande"
+
+block error_text
+    // Request URI too large
+    p
+        | Vous croyez que ça m'amuse ?

@@ -1,0 +1,29 @@
+extends ../../../template-parts/layout-portfolio-item.pug
+
+block set_desc
+    -
+        desc.pid        = "ballinatone";
+        desc.name       = "Ballinatone, démo simple d'une appli webaudio";
+        desc.demo_url   = "https://demos.mugcat.fr/ballinatone";
+        desc.source_url = "https://github.com/fdmysterious/mugcat-demos/tree/master/ballinatone";
+
+block desc_short
+    p Exercice autour de l'API WebAudio pour l'université, le but étant de présenter le tout de manière originale.
+
+block desc_long
+    p
+        | Dans cet exercice, il fallait utiliser l'API WebAudio pour montrer qu'on
+        | avait compris comment s'en servir. Cherchant une manière
+        | originale de présenter le tout, voici ce que j'ai obtenu : 
+        | on place des balles "sonores" en appuyant ur <kbd>G</kbd>, et on place
+        | ensuite des balles "rebondissantes" en appuyant sur <kbd>F</kbd>, qui
+        | viennent trigger les balles sonores lors d'une collision.
+
+    p
+        | Différents paramètres sonores sont ajustables, et peuvent-être rendus
+        | aléatoires. Pour la hauteur de la note jouée, différentes échelles
+        | sont disponibles pour ajouter de l'harmonie à la génération.
+
+    p
+        | Il est enfin possible d'enlever un objet en cliquant dessus. Il est
+        | possible d'effacer tout l'écran en appuyant sur <kbd>R</kbd>.

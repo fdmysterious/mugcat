@@ -1,0 +1,33 @@
+extends ./layout-main.pug
+
+block vars
+    -
+        var desc = {
+            pid        : "" ,
+            name       : "" ,
+            demo_url   : "#",
+            source_url : "#"
+        };
+
+    // A bit hacky, maybe should find better, huh
+    block set_desc 
+    - title = "Portfolio - " + desc.name
+
+block content
+    a.portfolio-prev-link( href="/fr/portfolio" ) Portfolio
+
+    h1 #{desc.name}
+    figure.full-width
+        div.img-wrapper
+            a( href="/assets/img/portfolio/" + desc.pid + ".png", target="_blank" )
+                img( src="/assets/img/portfolio/" + desc.pid + ".png" )
+
+        figcaption
+            a.button.primary( target="_blank", href=desc.demo_url ) Demo
+            a.button.no-border( href=desc.source_url ) Source
+
+    h2 En bref
+    block desc_short
+    
+    h2 Détails
+    block desc_long

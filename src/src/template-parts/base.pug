@@ -1,0 +1,47 @@
+-
+    var title = "";
+    var main_nav_hidden = false;
+block decl
+block vars
+
+mixin nav-link( url, icon, text )
+    a.nav-link( href=url )
+        i.fa( class="fa-" + icon )
+        span.subtitle #{text}
+
+doctype html
+html
+    head
+        meta( charset="utf-8" )
+        meta( name="viewport" content="width=device-width, initial-scale=1" )
+        if title
+            title #{title} − Mugcat
+        else
+            title Mugcat − Much meow !
+
+        link( rel="stylesheet" type="text/css" href="/main.css" )
+
+        include ../template-utils/ie_support.html
+
+    body
+
+        div.main-background
+            canvas
+
+        header.main-header( role="banner" )
+            div.main-header_logo
+                img( src="/assets/img/logo.svg" alt="Mugcat" )
+
+            nav.main-nav( role="navigation" class=main_nav_hidden ? "mod_hidden" : "" )
+                main.main-nav_content
+                    include ../template-config/main-nav.pug
+                    each it in main_nav_items
+                        +nav-link( it.url, it.icon, it.text )
+
+        div.dynamic-wrapper
+            block main
+
+
+        script( src="/assets/lib/delaunay.js"       )
+        script( src="/assets/lib/highlight.pack.js" )
+        script( src="/index.js" )

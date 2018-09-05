@@ -1,0 +1,64 @@
+main.main-wrapper.slides-wrapper.mod-full
+    article.slide
+        div.slide_back.pos-left
+            div.slide_back_img( style="background-image : url('assets/img/slide_1.jpg')")
+            div.slide_back_overlay
+        div.slide_content.pos-right
+            h2 Équipements et pièces détachées de garage
+            main
+                p Spécialiste des équipements de garage depuis 1988, la société MGServices s'adresse aux professionnels de la réparation automobile ainsi qu'aux particuliers souhaitant acquérir du matériel de qualité professionnelle.
+
+    article.slide
+        div.slide_back.pos-right
+            div.slide_back_img( style="background-image : url('assets/img/slide_2.jpg')")
+            div.slide_back_overlay
+        div.slide_content.pos-left
+            h2 Maintenance de vos équipements techniques
+            main
+                p La société MGServices intervient dans les secteurs VL, PL, Moto et Centre de Contrôle Technique.
+
+    article.slide
+        div.slide_back.pos-bottom
+            div.slide_back_img( style="background-image: url('assets/img/slide_3.jpg');" )
+            div.slide_back_overlay
+
+        div.slide_content.pos-center
+            h2 Nos marques de référence
+            main
+                p Nous proposons du matériel neuf ou d'occasion dans la limite des stocks disponibles
+                div.featured-container
+                    div.item
+                        h3 PTS
+                        ul
+                            li Outillage à main
+                            li Outillage pneumatique
+                    div.item
+                        h3 Actia Muller
+                        ul
+                            li Géométrie
+                            li Équilibreuse
+                            li Machine à pneus
+                            li Ligne de contrôle technique
+                            li Réglophare
+                            li Gaz
+
+                    div.item
+                        h3 Bel air
+                        ul
+                            li Compresseur
+
+                    div.item
+                        h3 Salcatec
+                        ul
+                            li Évacuation des gaz d'échappement
+
+                    div.item
+                        h3 Werther
+                        ul
+                            li Pont
+                            li Réglophare
+
+                    div.item
+                        h3 Cascos
+                        ul
+                            li Pont élévateur

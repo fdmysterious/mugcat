@@ -1,3 +1,9 @@
+// Florian Dupeyron (floolfy)
+// Update august 2018
+
+//////////////////////////////////////////
+// Main blocks
+//////////////////////////////////////////
 html,body
 {
     position   : relative;
@@ -18,21 +24,273 @@ body
     min-height : 100%;
 }
 
-code {
-    font-family : monospace;
+//////////////////////////////////////////
+// Main wrapper
+//////////////////////////////////////////
+.main-wrapper
+{
+    @include make-container(
+        $size-main-container-fixed,
+        $size-main-container-rel,
+        $size-main-container-margin
+    );
 
-    & > pre {
-        background : $color-purple;
-        color      : $color-cream;
+    z-index: 200;
 
-        padding : 1em;
+    padding : 2em;
+    @media( max-width : $size-mobile ) {
+        padding-left  : 1em;
+        padding-right : 1em;
+    }
+
+    background : $color-background-content;
+
+    transition : opacity 200ms ease, transform 200ms ease;
+
+    &.mod_leave {
+        opacity : 0;
+        transform : translateX( -5% );
+    }
+
+    &.mod_enter {
+        position  : absolute; // Trick
+        opacity   : 0;
+        transform : translateX( 5% );
     }
 }
 
-pre {
-	overflow-x : auto;
+//////////////////////////////////////////
+// Main Header
+//////////////////////////////////////////
+.main-header
+{
+    @include make-container(
+        $size-main-container-fixed + $size-main-container-margin,
+        95%,
+        0
+    );
+
+    display : flex;
+    align-items : center;
+    z-index : 100;
+
+    & > .main-header_logo {
+        text-align : center;
+        position   : relative;
+
+        display : inline-block;
+        margin  : 1rem;
+
+        img {
+            margin : 0;
+            height : $size-header-height;
+
+            @media( max-width : $size-phablet ) {
+                height : $size-header-height-mobile;
+            }
+        }
+    }
+    
+    @media( max-width : $size-tablet ) {
+        flex-direction : column;
+        text-align     : center;
+    }
 }
 
+//////////////////////////////////////////
+// Main NAV
+//////////////////////////////////////////
+.main-nav
+{
+    flex-grow : 1;
+    margin-top : 1rem;
+    margin-bottom : 1rem;
+
+    position : relative;
+
+    & > .main-nav_content {
+        display : flex;
+        justify-content : flex-end;
+        flex-wrap : wrap;
+
+        width : 100%;
+
+        position : absolute;
+        top : 40%;
+    }
+
+    @media( min-width : $size-tablet ) {
+        height : $size-header-height;
+    }
+
+    @media( max-width : $size-tablet ) {
+        width  : $size-main-container-rel;
+
+        & > .main-nav_content {
+            position : relative;
+            top : 0;
+            left : 0;
+            justify-content : space-around;
+        }
+
+        .nav-link {
+            margin-left   : 0;
+            margin-right  : 0;
+            margin-bottom : 2em;
+        }
+    }
+
+
+    ///////////////////////////////////////
+
+    transition : opacity 200ms ease;
+    &.mod_hidden {
+        opacity : 0;
+    }
+}
+
+.nav-link {
+    @media( min-width : $size-tablet ) {
+        margin-left : 5rem; // TODO // Better
+    }
+
+    @media( max-width : $size-tablet ) {
+        margin-left : 1.5em;
+        margin-right : 1.5em;
+    }
+
+    @include no-outline();
+
+    position : relative;
+    white-space : nowrap;
+    overflow : visible;
+
+    color : $color-magenta;
+
+    &:hover {
+        color : lighten( $color-magenta, 20 );
+        & > .subtitle {
+            opacity : 1;
+        }
+    }
+
+    &:active {
+        color : rgba( 0,0,0,0 );
+        text-shadow : 0 0 2px lighten( $color-magenta, 20 );
+    }
+
+    & > i {
+        font-size : 2.8em;
+    }
+
+    /////////////////////////
+
+    & > .subtitle {
+        position   : absolute;
+        left       : 50%;
+        top        : 100%;
+        text-align : center;
+
+        transform : translate( -50%, .5em );
+        opacity   : 0;
+
+        transition : opacity 200ms ease;
+    }
+
+    @media( max-width : $size-tablet ) {
+        & > .subtitle {
+            opacity : 1;
+        }
+
+        & > i {
+            font-size : 2em;
+        }
+    }
+}
+//////////////////////////////////////////
+// Main Footer
+//////////////////////////////////////////
+.main-footer
+{
+    @include make-container(
+        $size-main-container-fixed,
+        $size-main-container-rel,
+        $size-main-container-margin
+    );
+
+    z-index : 200;
+
+    margin-top : $size-main-container-top;
+    margin-bottom : 1rem;
+
+    padding : 2em;
+    padding-top : .8em;
+    padding-bottom : .8em;
+
+
+    color : $color-background-content !important;
+
+    ////////////////////////////////////
+
+    @media( $size-mobile ) {
+        padding-left  : 1em;
+        padding-right : 1em;
+        width         : 100%;
+    }
+
+    p {
+        margin : .2em;
+        text-align : center;
+    }
+
+    & > dl {
+        margin-bottom : 0;
+    }
+
+    a {
+        color : $color-orange;
+    }
+
+
+    ////////////////////////////
+
+    &.mod_enter {
+        opacity : 0;
+    }
+
+    &.mod_leave {
+        display : none;
+    }
+}
+
+//////////////////////////////////////////
+// Main background
+//////////////////////////////////////////
+.main-background
+{
+    position     : fixed;
+    left         : 0;
+    right        : 0;
+
+    width        : 100%;
+    height       : 100%;
+    z-index      : 0;
+
+    background   : $color-background-main;
+
+    canvas {
+        position : absolute;
+        left     : 0;
+        top      : 0;
+        width    : 100%;
+        height   : 100%;
+    }
+}
+
+
+///////////////////////////////////////////
+// Special classes stuff
+///////////////////////////////////////////
 figure.full-width {
     margin : 0;
     margin-bottom : 1em;
@@ -49,5 +307,139 @@ figure.full-width {
     img {
         max-width  : 100%;
         max-height : 50rem;
+    }
+}
+
+//////////////////////////////////////////
+// Portfolio stuff
+//////////////////////////////////////////
+.portfolio-links
+{
+    display : flex;
+    justify-content : space-around;
+    flex-wrap : wrap;
+
+    & > a {
+        @include no-outline();
+
+        position : relative;
+        margin   : 1em;
+
+        text-decoration : none;
+
+        & > figure {
+            margin : 0;
+            & > .img-wrapper {
+                position : relative;
+                height   : 256px;
+                width    : 256px;
+                overflow : hidden;
+
+                & > img {
+                    height    : 100%;
+                    width     : 100%;
+                }
+            }
+
+            & > figcaption {
+                margin-top  : .5em;
+                text-align  : center;
+                color       : $color-magenta;
+                font-size   : 1.2em;
+                width       : 256px;
+                white-space : wrap;
+            }
+        }
+    }
+}
+
+.portfolio-prev-link {
+    display : block;
+    text-decoration : none;
+    fontsize : 1.2em;
+    margin-bottom : 1.2em;
+
+    &::before{
+        content : "←";
+    }
+}
+
+//////////////////////////////////////////
+// Home page
+//////////////////////////////////////////
+
+.home-wrapper {
+    // Box //
+    position : absolute;
+    top : 0;
+    left : 0;
+    width : 100%;
+    min-height: 100%;
+    z-index : 1;
+    // End of section //
+
+    p{ text-align : center; }
+
+    font-size : 1.5rem;
+
+    & > .home-wrapper_content {
+        // Box //
+        position : absolute;
+        top : 50%;
+        left : 50%;
+        transform : translate( -50%, -40% );
+        // End of section //
+
+        & > * {
+            transition : opacity 200ms ease;
+
+            &.mod_hidden {
+                opacity : 0;
+            }
+        }
+    }
+
+    color : $color-cream;
+    h1 {
+        text-align : center;
+        color : $color-orange;
+        font-size : 3rem;
+    }
+
+    @media( max-width : $size-phablet ) {
+        font-size : 1.2rem;
+        & > .home-wrapper_content {
+            width : 95%;
+
+            @media( max-width : $size-mobile ) {
+                transform : translate( -50%, -35% );
+            }
+        }
+    }
+
+    .nav-link {
+        & > .subtitle {
+            opacity : 1;
+        }
+    }
+}
+
+.home-links {
+    display : flex;
+    justify-content : space-around;
+    flex-wrap : wrap;
+
+    @media( max-width : $size-phablet ) {
+        width : 100%;
+
+        .nav-link {
+            margin-left   : 1em;
+            margin-right  : 1em;
+            margin-bottom : 2.5em;
+        }
+    }
+
+    .nav-link {
+        margin-left: 0;
     }
 }

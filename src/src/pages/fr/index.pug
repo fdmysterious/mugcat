@@ -1,0 +1,21 @@
+extends ../../template-parts/base.pug
+
+block vars
+    - main_nav_hidden = true;
+
+block main
+    div.home-wrapper
+        div.home-wrapper_content
+            h1 Bonjour
+            p
+                | Je m'appelle Florian Dupeyron, étudiant de 21 ans.
+                | Ce petit bout de web est l'occasion pour moi de vous
+                | présenter mes activités numériques.
+
+            div.home-links
+                include ../../template-config/main-nav.pug
+                each it in main_nav_items
+                    +nav-link( it.url, it.icon, it.text )
+
+    script
+        | window.page_loaded = function(){window.components.triangles.set_animate(true);}

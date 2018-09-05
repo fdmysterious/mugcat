@@ -1,8 +1,0 @@
-@mixin main-container()
-{
-    margin : auto;
-    width  : $size-main-container-rel;
-    @media( min-width : $size-main-container-fixed / ($size-main-container-rel/100%) ) {
-        width : $size-main-container-fixed;
-    }
-}

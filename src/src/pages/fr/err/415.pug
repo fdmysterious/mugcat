@@ -1,0 +1,10 @@
+extends ../../../template-parts/layout-error.pug
+
+block error_desc
+    - error_desc.status = "415"
+    - error_desc.text   = "Média non supporté"
+
+block error_text
+    // Unsupported media type
+    p
+        | Connaît pas votre machin là

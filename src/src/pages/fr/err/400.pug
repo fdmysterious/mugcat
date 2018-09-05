@@ -1,0 +1,12 @@
+extends ../../../template-parts/layout-error.pug
+
+block error_desc
+    - error_desc.status = "400"
+    - error_desc.text   = "Mauvaise requête"
+
+block error_text
+    // Bad request
+    p
+        | Je pense que je n'ai pas compris ce que vous
+        | voulez de moi !
+

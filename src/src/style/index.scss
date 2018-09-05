@@ -1,6 +1,8 @@
-@import "~normalize.css/normalize.css"    ;
-@import "lib/font-awesome/font-awesome"   ; //TODO : Use npm package ?
-@import "~flexboxgrid-sass/flexboxgrid"   ;
+@import "lib/normalize/normalize";
+@import "lib/font-awesome/font-awesome";
+//@import "flexboxgrid-sass/flexboxgrid"   ;
 
-@import "transitions";
+@import "vars";
+@import "utils";
+
 @import "elems";

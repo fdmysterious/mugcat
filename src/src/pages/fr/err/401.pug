@@ -1,0 +1,10 @@
+extends ../../../template-parts/layout-error.pug
+
+block error_desc
+    - error_desc.status = "401"
+    - error_desc.text   = "Non autorisé"
+
+block error_text
+    // Unauthorized
+    p
+        | I'm sorry Dave, I'm afraid I can't do that.

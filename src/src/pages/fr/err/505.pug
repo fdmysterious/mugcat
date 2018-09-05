@@ -1,0 +1,10 @@
+extends ../../../template-parts/layout-error.pug
+
+block error_desc
+    - error_desc.status = "505"
+    - error_desc.text   = "Version HTTP non supportée"
+
+block error_text
+    // HTTP version not supported
+    p
+        | La version HTTP demandée n'est pas supportée. Trop hype.

@@ -1,0 +1,42 @@
+///////////////////
+// Containers
+///////////////////
+.g_row
+{
+    // Flex properties //
+    display : flex;
+    flex-direction  : row;
+    justify-content : center;
+    align-items     : top;
+    // End of section //
+
+    @media( max-width : $size-tablet ) {
+        flex-direction : column;
+    }
+}
+
+.g_list
+{
+	display : flex;
+	flex-direction  :          row;
+	justify-content : space-around;
+	align-items     :       top;
+	flex-wrap       :         wrap;
+}
+
+///////////////////
+// Children
+///////////////////
+.g_half
+{
+    padding-left  : 1rem;
+    padding-right : 1rem;
+
+    flex-grow: 1;
+
+    text-align    : center;
+}
+
+.g_item {
+	padding : 1rem;
+}

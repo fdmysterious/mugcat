@@ -1,0 +1,9 @@
+extends ../../../template-parts/layout-error.pug
+
+block error_desc
+    - error_desc.status = "500"
+    - error_desc.text   = "Erreur interne au serveur"
+
+block error_text
+    // Internal server error
+    p Meow meow meow meow

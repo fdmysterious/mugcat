@@ -1,0 +1,11 @@
+extends ../../../template-parts/layout-error.pug
+
+block error_desc
+    - error_desc.status = "431"
+    - error_desc.text   = "Headers trop grands"
+
+block error_text
+    // Request header too large
+    p
+        | J'aime votre envie d'être exhaustif,
+        | mais ça fait beaucoup là.

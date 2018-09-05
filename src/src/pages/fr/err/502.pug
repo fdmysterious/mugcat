@@ -1,0 +1,10 @@
+extends ../../../template-parts/layout-error.pug
+
+block error_desc
+    - error_desc.status = "502"
+    - error_desc.text   = "Mauvaise passerelle"
+
+block error_text
+    // Bad gateway
+    p
+        | J'ai pas trouvé mon copain :(

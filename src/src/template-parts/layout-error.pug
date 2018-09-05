@@ -1,0 +1,20 @@
+extends ./layout-main.pug
+
+block decl
+    -
+        var error_desc = {
+            status : "",
+            text   : ""
+        }
+    block error_desc
+
+block vars
+    - title = "Erreur " + error_desc.text
+
+block content
+    h1 #{error_desc.text}
+    figure.full-width
+        div.img-wrapper
+            img( src="/assets/img/cats" alt="meooww soo bad :(" )
+
+    block error_text

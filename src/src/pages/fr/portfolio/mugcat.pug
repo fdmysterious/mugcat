@@ -1,0 +1,17 @@
+extends ../../../template-parts/layout-portfolio-item.pug
+
+block set_desc
+    - desc.pid        = "mugcat"
+    - desc.name       = "Mugcat.fr"
+    - desc.demo_url   = "https://mugcat.fr"
+    - desc.source_url = "https://github.com/fdmysterious/mugcat"
+
+block desc_short
+    p Réalisation de mon site web personnel
+
+block desc_long
+    p
+        | Originalement conçu avec <a href="https://vuejs.org">vue js</a> et
+        | <a href="https://webpack.js.org">webpack</a>, je suis revenu à une template plus traditionnelle à base
+        | de <a href="https://pugjs.org">pug</a>, <a href="https://sass-lang.com/">sass</a> et <a href="https://www.typescriptlang.org/">typescript</a>, avec <a href="https://gruntjs.com/">grunt</a>
+        | comme task runner.

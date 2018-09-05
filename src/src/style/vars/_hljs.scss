@@ -1,0 +1,20 @@
+/****************************
+ * Config vars for the hljs *
+ * theme                    *
+ ****************************/
+// Florian Dupeyron
+// August 2018
+
+$hljs-main-color      : $color-background-main;
+$hljs-main-background : $color-background-content;
+
+$hljs-comment-color   : lighten( $hljs-main-color, 30 );
+$hljs-keyword-color   : lighten( $color-navy, 30 );
+$hljs-expression-color: $color-cream;
+$hljs-identifier-color: $color-orange;
+$hljs-type-color      : lighten( $color-navy, 30 );
+$hljs-param-color     : $color-cream;
+
+$hljs-css-id-color    : lighten( $color-navy, 30 );
+$hljs-css-class-color : $color-yellow;
+

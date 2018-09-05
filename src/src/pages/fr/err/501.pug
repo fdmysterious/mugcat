@@ -1,0 +1,10 @@
+extends ../../../template-parts/layout-error.pug
+
+block error_desc
+    - error_desc.status = "501"
+    - error_desc.text   = "Non implémenté"
+
+block error_text
+    // Not implemented
+    p
+        | Comment qu'on fait ça siouplé ?

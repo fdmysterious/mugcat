@@ -11,36 +11,21 @@
 
 @mixin make-container(
     $size-fixed,
-    $size-rel  ,
-    $margin-left,
-    $trigger-size : ( $size-fixed + 2 * $margin-left )
-)
-{
-    // Position //
-    position : relative;
-    // End of section //
-
-    // Box //
-    margin     : auto;
-    width      : $size-rel ;
+    $size-rel,
+    $margin-left : 0
+) {
+    position   : relative;
+    //margin     : auto;
+    width      : $size-rel;
     box-sizing : border-box;
-    // End of section //
+    max-width  : $size-fixed;
 
-    // Media //
+    margin : auto;
     @media(
-        min-width : ( $size-fixed ) / ( $size-rel / 100% )
-    )
-    {
-        width       : $size-fixed;
-
-        @media(
-            min-width : $trigger-size / ( $size-rel / 100% )
-        )
-        {
-            margin-left : $margin-left;
-        }
+        min-width : ( $size-fixed + $margin-left ) / ( $size-rel / 100% )
+    ) {
+        margin-left : $margin-left;
     }
-    // End of section //
 }
 
 .hide-scrollbar {
@@ -52,7 +37,6 @@
     $size-rel
 )
 {
-    position : relative;
     width : $size-rel;
     box-sizing : border-box;
 
@@ -79,9 +63,9 @@
     @font-face {
        font-family : $family;
        src : local($sysName),
-            url( "~assets/fonts/#{$basename}.woff") format("woff"),
-            url( "~assets/fonts/#{$basename}.eot" ) format("embedded-opentype"),
-            url( "~assets/fonts/#{$basename}.otf" ) format("opentype")
+            url( "#{$font-path}/#{$basename}.woff") format("woff"),
+            url( "#{$font-path}/#{$basename}.eot" ) format("embedded-opentype"),
+            url( "#{$font-path}/#{$basename}.otf" ) format("opentype")
        ;
 
        font-weight : $fontWeight;

@@ -1,10 +1,15 @@
-// Defines sizes
+//////////////////////////////////////////
+// Screen sizes
+//////////////////////////////////////////
 $size-mobile                 : 400px;
 $size-phablet                : 700px;
 $size-tablet                 : 750px;
 $size-desktop                : 1000px;
 $size-hd                     : 1200px;
 
+//////////////////////////////////////////
+// Main container sizes
+//////////////////////////////////////////
 $size-main-container-top     : 1rem;
 $size-main-container-margin  : 200px;
 $size-main-container-rel     : 95%;
@@ -16,6 +21,7 @@ $size-header-height          : 10rem;
 $size-header-height-mobile   :  7rem;
 $size-header-width           : 25rem;
 $size-header-overlay-height  : 10rem;
+$size-footer-height : 5rem;
 
 $size-menu-width : 19rem;
 

@@ -1,0 +1,10 @@
+extends ../../../template-parts/layout-error.pug
+
+block error_desc
+    - error_desc.status = "429"
+    - error_desc.text   = "Troooop de requêtes"
+
+block error_text
+    // Too many requests
+    p
+        | On se calme mon ami, pas si vite, pas si vite.

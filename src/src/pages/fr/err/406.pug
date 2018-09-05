@@ -1,0 +1,10 @@
+extends ../../../template-parts/layout-error.pug
+
+block error_desc
+    - error_desc.status = "406"
+    - error_desc.text   = "Non acceptable"
+
+block error_text
+    // Not accptable
+    p
+        | C'est inacceptable votre machin là !

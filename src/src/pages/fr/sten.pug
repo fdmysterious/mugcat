@@ -1,0 +1,153 @@
+extends ../../template-parts/layout-main.pug
+
+block vars
+    - title = "Sten"
+
+block content
+    h1 Sten
+    p
+        | Sten est un langage de prise de notes hiérarchiques. Grandement
+        | inspiré de Markdown, ses objectifs principaux sont la lisibilité
+        | du code brut, la rapidité de prise en main et de saisie. De ce fait,
+        | son nom est issu du mot "Sténographie".
+
+    h2 Principe de base
+    p
+        | Il s'agit de constituer une réprésentation "linéarisée" d'un arbre :
+        | Un nœud racine, premier élément du fichier. Puis on y vient rajouter
+        | des nœuds enfants en indiquant le niveau de hiérarchie par le niveau
+        | d'indentation, un peu à la manière de python. Par exemple :
+    pre
+        |Nœud racine
+        |   Premier Enfant
+        |
+        |   Deuxième enfant
+        |       Premier sous-enfant
+        |       Deuxième sous-enfant
+        |           etc...
+        |   etc...
+
+    p
+        | Il est possible de rajouter des symboles indiquant la nature
+        | du nœud, son rôle sémantique :
+        dl.inline
+            dt rien ou -
+            dd Indique un nœud standard : un titre, une idée, un terme
+
+            dt &gt;
+            dd Indique un nœud qui "explique" une idée
+
+            dt =&gt;
+            dd Résumé, conséquence
+
+            dt )
+            dd Item de liste non ordonnée
+
+            dt #)
+            dd Item de liste ordonnée
+
+    h2 Enrichissement d'un nœud
+    p Il est ensuite possible d'enrichir un nœud de différentes informations
+
+    h3 Description
+    p
+        | La description est un moyen direct de rattacher une information à
+        | un nœud, par exemple : un sous-titre, une citation, du code. Le balisage
+        | peut s'effectuer de deux manières: 
+
+    pre
+        | Descriptions
+        |   Description Courte
+        |   | Pour ajouter une information à un nœud
+        |
+        |   Description courte bis
+        |   | Il est possible d'écrire
+        |   | sur plusieurs lignes
+        |
+        |   Description longue
+        |   |[
+        |       Balisage permettant d'écrire
+        |       sur plusieurs lignes sans avoir à
+        |       remettre le symbole. De plus, conserve
+        |       les niveaux de tabulations dans des situations
+        |       particulières (code par exemple).
+        |   |]
+
+    h3 Tags
+    p
+        | Les tags donnent au nœeud des informations d'affichage. Ils indiquent
+        | la nature de certains contenus pour ajuster le traitement du parser et
+        | la manière de les afficher
+
+    pre
+        | Node tags
+        |   [q] Citation
+        |   + by Theodore Roosveldt
+        |   | Keep your eyes on the stars, and your
+        |   | feet on the ground
+        | 
+        |   [c] Some code
+        |   | printf( "Hello world !\n\a" );
+
+    h3 Attachments
+    p Enfin, les attachments sont le moyen d'ajouter des métadonnées aux nœuds :
+    dl.inline
+        dt + u
+        dd Rattache une URI à un nœud
+
+        dt + i
+        dd Rattache une image à un nœud
+
+        dt + cf
+        dd Indique une référence
+
+        dt + by
+        dd Indique un auteur
+
+        dt + dt
+        dd Indique une position temporelle (date-time)
+
+        dt + from
+        dd Provenance de l'information
+
+    p => Voir l'exemple suivant pour un exemple d'application
+
+    h3 Exemple d'application
+    pre
+        | Exemple plus complet
+        | + by Florian Dupeyron
+        | + u https://mugcat.fr/fr/projects/sten
+        |   Première idée
+        |   | Sous-titre / Description
+        |       [c] Un peu de code
+        |       |[
+        |           #include &lt;iostream&gt;
+        |           
+        |           int main( int argc, char * argv[] )
+        |           {
+        |               std::cout &lt;&lt; "Hello world !" &lt;&lt; std::endl;
+        |               return 0;
+        |           }
+        |       |]
+        |
+        |   Une liste non ordonnée
+        |       ) Item
+        |       ) Item
+        |       ) Item
+        |
+        |   Une liste ordonnée
+        |       #) Item 1
+        |       #) Item 2
+        |       #) Item 3
+    
+    h2 Manuel
+    p
+        | Pour l'instant, je finis de peaufiner une première
+        | version du langage, puis je verrai à écrire un manuel un peu plus exhaustif.
+
+    h2 Software ?
+    p
+        | je conçois actuellement une petite bibliothèque C++ permettant le parsage, de sorte
+        | d'avoir un outil suffisamment universel pour faire mumuse ensuite.
+
+

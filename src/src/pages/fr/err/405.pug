@@ -1,0 +1,10 @@
+extends ../../../template-parts/layout-error.pug
+
+block error_desc
+    - error_desc.status = "405"
+    - error_desc.text   = "Méthode non autorisée"
+
+block error_text
+    // Method not allowed
+    p
+        | Je n'aime pas trop ce que vous voulez faire

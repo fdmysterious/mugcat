@@ -1,0 +1,17 @@
+extends ../../../template-parts/layout-main.pug
+
+mixin portfolio-link( pid, name )
+    a( href="/fr/portfolio/" + pid )
+        figure
+            div.img-wrapper
+                img( src="/assets/img/portfolio/thumb_" + pid + ".png" alt=pid )
+            figcaption #{name}
+
+block vars
+    - title = "Portfolio"
+
+block content
+    h1 Portfolio
+    nav.portfolio-links
+        +portfolio-link( "ballinatone", "Ballinatone" )
+        +portfolio-link( "mugcat"     , "Mugcat.fr"   )

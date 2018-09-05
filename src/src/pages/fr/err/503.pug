@@ -1,0 +1,13 @@
+extends ../../../template-parts/layout-error.pug
+
+block error_desc
+    - error_desc.status = "503"
+    - error_desc.text   = "Service indisponible"
+
+block error_text
+    // service unavailable
+    p
+        | Le site est actuellement indisponible. Nos équipes
+        | félines mettent tout en œuvre pour rétablir la
+        | communication dans les plus brefs délais. Quoi de mieux
+        | qu'un café pour patienter ?

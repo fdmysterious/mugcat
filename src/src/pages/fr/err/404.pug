@@ -1,0 +1,11 @@
+extends ../../../template-parts/layout-error.pug
+
+block error_desc
+    - error_desc.status = "404"
+    - error_desc.text   = "Ressource non trouvée"
+
+block error_text
+    // Not found
+    p
+        | La ressource demandée n'a pas été trouvée, malgré les croquettes investies dans
+        | cette recherche.

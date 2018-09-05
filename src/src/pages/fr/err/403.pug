@@ -1,0 +1,9 @@
+extends ../../../template-parts/layout-error.pug
+
+block error_desc
+    - error_desc.status = "403"
+    - error_desc.text   = "Accès refusé"
+
+block error_text
+    // Forbidden
+    p Halte là ! Vous croyez aller où comme ça ?

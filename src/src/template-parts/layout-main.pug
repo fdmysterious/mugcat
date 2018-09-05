@@ -1,0 +1,21 @@
+extends base.pug
+
+block vars
+    - main_nav_hidden = true;
+
+block main
+    main.main-wrapper( role="main" )
+        block content
+
+    footer.main-footer#footer( role="footer" )
+        p <strong>2017 - 2018 Florian Dupeyron</strong>.
+        p Code source disponible sur <a href="https://github.com/fdmysterious/mugcat/" target="_blank">Github</a>.
+        p Code source sous licence GPLv3. Contenu multimédia sous licence CC-BY-NC v3.
+
+    block page_load_script
+        script
+            | window.page_loaded = function() { 
+            |   window.components.triangles.set_animate(false);
+            |   window.components.header.menu_show();
+            | }
+

@@ -1,0 +1,120 @@
+/************************************
+ * Custom mugcat-flavored theme for *
+ * higlight.js                      *
+ ************************************/
+// Florian Dupeyron (floolfy)
+// August 2018
+
+pre
+{
+    display    : block;
+    overflow-x : auto ;
+    padding    : 0.5em;
+
+    background : $hljs-main-color;
+    color      : $hljs-main-background;
+}
+
+/////////////////////////////////////
+// Stolen from the railcasts theme
+/////////////////////////////////////
+
+.hljs-comment,
+.hljs-quote {
+    color : $hljs-comment-color;
+    font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag {
+  color : $hljs-keyword-color;
+}
+
+.hljs-string,
+.hljs-number,
+.hljs-regexp,
+.hljs-variable,
+.hljs-template-variable {
+  color: $hljs-expression-color;
+}
+
+.hljs-subst {
+  color: #519f50;
+}
+
+.hljs-tag,
+.hljs-name {
+  //color: #e8bf6a;
+  color : $hljs-identifier-color;
+}
+
+.hljs-type {
+  //color: #da4939;
+  color : $hljs-type-color;
+}
+
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-attr,
+.hljs-link {
+  //color: #6d9cbe;
+  color : $hljs-keyword-color;
+}
+
+.hljs-params {
+  //color: #d0d0ff;
+  color : $hljs-param-color;
+}
+
+.hljs-attribute {
+  //color: #cda869;
+  color : $hljs-identifier-color;
+}
+
+.hljs-meta {
+  color: #9b859d;
+}
+
+.hljs-title,
+.hljs-section {
+  color: #ffc66d;
+}
+
+.hljs-addition {
+  background-color: #144212;
+  color: #e6e1dc;
+  display: inline-block;
+  width: 100%;
+}
+
+.hljs-deletion {
+  background-color: #600;
+  color: #e6e1dc;
+  display: inline-block;
+  width: 100%;
+}
+
+.hljs-selector-class {
+  //color: #9b703f;
+  color : $hljs-css-class-color;
+}
+
+.hljs-selector-id {
+  //color: #8b98ab;
+  color:  $hljs-css-id-color;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-link {
+  text-decoration: underline;
+}
