@@ -7,8 +7,11 @@ const config               = require("./config.js");
 const sass                 = require("gulp-sass")(require("sass"));
 const postcss              = require("gulp-postcss");
 const typescript           = require("gulp-typescript");
+const uglify               = require("gulp-uglify");
+const sourcemaps           = require("gulp-sourcemaps");
 
 const source               = require("vinyl-source-stream");
+const buffer               = require("vinyl-buffer");
 
 const autoprefixer         = require("autoprefixer");
 const cssnano              = require("cssnano");
@@ -49,6 +52,10 @@ task("ts_transpile", function() {
         .plugin(tsify)
         .bundle()
         .pipe(source("index.js"))
+        .pipe(buffer())
+        .pipe(sourcemaps.init({loadMaps: true}))
+        .pipe(uglify())
+        .pipe(sourcemaps.write("./"))
         .pipe(dest(config.path_to_build("js/")))
 })
 
