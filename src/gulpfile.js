@@ -1,3 +1,5 @@
+// https://www.typescriptlang.org/docs/handbook/gulp.html
+
 const { task, src, dest, watch, series, parallel } = require("gulp");
 
 const config               = require("./config.js");
@@ -6,14 +8,13 @@ const sass                 = require("gulp-sass")(require("sass"));
 const postcss              = require("gulp-postcss");
 const typescript           = require("gulp-typescript");
 
+const source               = require("vinyl-source-stream");
+
 const autoprefixer         = require("autoprefixer");
 const cssnano              = require("cssnano");
 
-// ┌─────────────────────────────────────────┐
-// │        Setup typescript project         │
-// └─────────────────────────────────────────┘
-
-const tsProject = typescript.createProject("tsconfig.json");
+const browserify           = require("browserify");
+const tsify                = require("tsify");
 
 // ┌─────────────────────────────────────────┐
 // │           CSS Transpile task            │
@@ -32,8 +33,36 @@ task("css_transpile", function() {
     ;
 });
 
+// ┌─────────────────────────────────────────┐
+// │            TS Transpile task            │
+// └─────────────────────────────────────────┘
+
 task("ts_transpile", function() {
-    return tsProject.src()
-        .pipe(tsProject())
+    return browserify({
+        basedir: ".",
+        debug: true,
+        entries: ["src/ts/main.ts"],
+        cache: {},
+        packageCache: {},
+        packageCache: {},
+    })
+        .plugin(tsify)
+        .bundle()
+        .pipe(source("index.js"))
         .pipe(dest(config.path_to_build("js/")))
 })
+
+// ┌─────────────────────────────────────────┐
+// │             copy html task              │
+// └─────────────────────────────────────────┘
+
+task("copy-html", function() {
+    return src(config.path_to_src("html/*.html"))
+        .pipe(dest(config.path_to_build("/")))
+});
+
+// ┌─────────────────────────────────────────┐
+// │               Build task                │
+// └─────────────────────────────────────────┘
+
+task("build", parallel("css_transpile", "copy-html", "ts_transpile"))
