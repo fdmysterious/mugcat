@@ -1,11 +1,19 @@
 const { task, src, dest, watch, series, parallel } = require("gulp");
 
 const config               = require("./config.js");
+
 const sass                 = require("gulp-sass")(require("sass"));
 const postcss              = require("gulp-postcss");
+const typescript           = require("gulp-typescript");
 
 const autoprefixer         = require("autoprefixer");
 const cssnano              = require("cssnano");
+
+// ┌─────────────────────────────────────────┐
+// │        Setup typescript project         │
+// └─────────────────────────────────────────┘
+
+const tsProject = typescript.createProject("tsconfig.json");
 
 // ┌─────────────────────────────────────────┐
 // │           CSS Transpile task            │
@@ -23,3 +31,9 @@ task("css_transpile", function() {
         .pipe(dest(config.path_to_build("css/")))
     ;
 });
+
+task("ts_transpile", function() {
+    return tsProject.src()
+        .pipe(tsProject())
+        .pipe(dest(config.path_to_build("js/")))
+})
