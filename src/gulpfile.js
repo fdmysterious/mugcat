@@ -4,6 +4,8 @@ const { task, src, dest, watch, series, parallel } = require("gulp");
 
 const config               = require("./config.js");
 
+const fancy_log            = require("fancy-log");
+
 const sass                 = require("gulp-sass")(require("sass"));
 const postcss              = require("gulp-postcss");
 const typescript           = require("gulp-typescript");
@@ -17,7 +19,23 @@ const autoprefixer         = require("autoprefixer");
 const cssnano              = require("cssnano");
 
 const browserify           = require("browserify");
+const watchify             = require("watchify");
 const tsify                = require("tsify");
+
+// ┌─────────────────────────────────────────┐
+// │             Watchify config             │
+// └─────────────────────────────────────────┘
+
+//const watchedBrowserify = watchify(
+//    browserify({
+//            basedir: ".",
+//            debug: true,
+//            entries: ["src/ts/main.ts"],
+//            cache: {},
+//            packageCache: {},
+//            packageCache: {},
+//        }).plugin(tsify)
+//);
 
 // ┌─────────────────────────────────────────┐
 // │           CSS Transpile task            │
@@ -40,23 +58,33 @@ task("css_transpile", function() {
 // │            TS Transpile task            │
 // └─────────────────────────────────────────┘
 
+//task("ts_transpile", function() {
+//    return watchedBrowserify
+//        .bundle()
+//        .pipe(source("index.js"))
+//        .pipe(buffer())
+//        .pipe(sourcemaps.init({loadMaps: true}))
+//        .pipe(uglify())
+//        .pipe(sourcemaps.write("./"))
+//        .pipe(dest(config.path_to_build("js/")))
+//})
+
 task("ts_transpile", function() {
     return browserify({
-        basedir: ".",
+        basedir: "./src/ts",
         debug: true,
-        entries: ["src/ts/main.ts"],
+        entries: ["main.ts"],
         cache: {},
-        packageCache: {},
-        packageCache: {},
+        packageCache: {}
     })
         .plugin(tsify)
         .bundle()
-        .pipe(source("index.js"))
+        .pipe(source("main.js"))
         .pipe(buffer())
         .pipe(sourcemaps.init({loadMaps: true}))
         .pipe(uglify())
         .pipe(sourcemaps.write("./"))
-        .pipe(dest(config.path_to_build("js/")))
+        .pipe(dest(config.path_to_build("js/")));
 })
 
 // ┌─────────────────────────────────────────┐
