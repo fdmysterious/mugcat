@@ -67,13 +67,13 @@ task("ts_transpile", function() {
     return browserify({
         basedir: "./src/ts",
         debug: true,
-        entries: ["main.ts"],
+        entries: ["index.ts"],
         cache: {},
         packageCache: {}
     })
         .plugin(tsify)
         .bundle()
-        .pipe(source("main.js"))
+        .pipe(source("index.js"))
         .pipe(buffer())
         .pipe(sourcemaps.init({loadMaps: true}))
         .pipe(uglify())
