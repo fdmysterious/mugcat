@@ -17,61 +17,63 @@
 				<img src="/assets/img/logo.svg" alt="Mugcat"/>
 			</div>
 
-			<nav class="main-nav" role="navigation">
+			<nav class="main-nav mod_hidden" role="navigation">
 				<main class="main-nav_content">
 					<a class="nav-link" href="index.html">
-						<i class="fa fa-user"></i>
-						<span class="subtitle">A propos</span>
+						<i class="fa fa-cogs"></i>
+						<span class="subtitle">Index template</span>
+					</a>
+
+					<a class="nav-link" href="standard.html">
+						<i class="fa fa-cogs"></i>
+						<span class="subtitle">Text template</span>
 					</a>
 
 					<a class="nav-link" href="portfolio.html">
-						<i class="fa fa-laptop"></i>
-						<span class="subtitle">Informatique</span>
-					</a>
-
-					<a class="nav-link" href="#">
-						<i class="fa fa-microchip"></i>
-						<span class="subtitle">Electronique</span>
-					</a>
-
-					<a class="nav-link" href="#">
-						<i class="fa fa-envelope"></i>
-						<span class="subtitle">Contact</span>
+						<i class="fa fa-cogs"></i>
+						<span class="subtitle">Portfolio template</span>
 					</a>
 				</main>
 			</nav>
 		</header>
 
 		<div class="dynamic-wrapper">
-			<main class="main-wrapper" role="main">
-				<h1>HTML Ipsum Presents</h1>
+			<div class="home-wrapper">
+				<div class="home-wrapper_content">
+					<h1>Bonjour</h1>
+					<p>	
+						Je m'appelle Florian Dupeyron, ingénieur en électronique embarquée.
+						Ce petit bout de web est l'occasion pour moi de vous présenter mes
+						activités numériques.
+					</p>
 
-				<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+					<div class="home-links">
+						<a class="nav-link" href="index.html">
+							<i class="fa fa-cogs"></i>
+							<span class="subtitle">Index template</span>
+						</a>
 
-				<h2>Header Level 2</h2>
+						<a class="nav-link" href="standard.html">
+							<i class="fa fa-cogs"></i>
+							<span class="subtitle">Text template</span>
+						</a>
 
-				<ol>
-				   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-				   <li>Aliquam tincidunt mauris eu risus.</li>
-				</ol>
+						<a class="nav-link" href="portfolio.html">
+							<i class="fa fa-cogs"></i>
+							<span class="subtitle">Portfolio template</span>
+						</a>
+						</nav>
+					</div>
+				</div>
 
-				<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
+			</div>
 
-				<h3>Header Level 3</h3>
-
-				<ul>
-				   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-				   <li>Aliquam tincidunt mauris eu risus.</li>
-				</ul>
-
-				<pre><code>
-				#header h1 a {
-				  display: block;
-				  width: 300px;
-				  height: 80px;
+			<script>
+				window.page_loaded = function() {
+					window.components.triangles.set_animate(true);
+					window.components.header.menu_hide();
 				}
-				</code></pre>
-			</main>
+			</script>
 		</div>
 
 		<script src="/assets/lib/delaunay.js"></script>
