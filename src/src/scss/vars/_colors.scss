@@ -1,0 +1,55 @@
+//////////////////////////////////////////
+// Color scheme
+//////////////////////////////////////////
+//$color-white       : #FFFBF7;
+//$color-black       : #140E0C;
+//$color-cream       : #FFE7CE;
+//$color-orange      : #F18F01;
+//$color-purple      : #3B1F2B;
+//$color-magenta     : #AB224D;
+//$color-navy        : #344A61;
+//$color-yellow      : #FFC700;
+//$color-dark-purple : #191526;
+//$color-dark-purple2: #171A2B;
+//$color-dark-navy   : #1F273B;
+//$color-dark-brown  : #19140D;
+
+$color-yellow      : #FFC700;
+$color-wood        : #C17738;
+$color-chocolate   : #3C1A11;
+$color-chocolate   : #180A07;
+//$color-chocolate   : #200E09;
+$color-coffee      : #FFE7CE;
+$color-sweet       : #AB224D;
+$color-navy        : #344A61;
+$color-black       : #111014;
+$color-white       : #FFFBF7;
+$color-toledo      : #211218;
+
+//////////////////////////////////////////
+// Main colors
+//////////////////////////////////////////
+//$color-background-main    : $color-purple;
+//$color-background-main    : $color-dark-purple2;
+//$color-background-content : $color-cream;
+//
+//$color-heading            : lighten( $color-background-main, 15 );
+//$color-main               : lighten( $color-background-main, 25 );
+//$color-link               : #ba5e01;
+//$color-link-hover         : lighten( $color-link, 20 );
+
+$color-background-main     : $color-toledo;
+$color-background-content  : $color-coffee;
+$color-heading             : lighten( $color-background-main, 15 );
+$color-main                : lighten( $color-background-main, 25 );
+$color-link                : $color-wood;
+$color-link-hover          : lighten( $color-link, 20 );
+
+$color-nav-link            : $color-sweet;
+$color-portfolio-figcaption: $color-sweet;
+
+$color-button-main         : $color-sweet;
+$color-button-hover        : $color-coffee;
+
+$color-button-primary-bg   : $color-chocolate;
+$color-button-primary-fg   : $color-coffee

@@ -51,7 +51,7 @@ task("css_transpile", function() {
         cssnano()
     ];
 
-    return src(config.path_to_src("scss/style.scss"))
+    return src(config.path_to_src("scss/index.scss"))
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss(postcss_plugins))
         .pipe(dest(config.path_to_build("/")))

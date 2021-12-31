@@ -1,0 +1,27 @@
+//////////////////////////////////////////
+// Color scheme
+//////////////////////////////////////////
+$color-white   : #FFFBF7;
+$color-black   : #140E0C;
+$color-cream   : #FFE7CE;
+$color-orange  : #F18F01;
+$color-purple  : #3B1F2B;
+$color-magenta : #AB224D;
+$color-navy    : #344A61;
+$color-yellow  : #FFC700;
+$color-dark-purple : #191526;
+$color-dark-purple2: #171A2B;
+$color-dark-navy : #1F273B;
+$color-dark-brown: #19140D;
+
+//////////////////////////////////////////
+// Main colors
+//////////////////////////////////////////
+//$color-background-main    : $color-purple;
+$color-background-main    : $color-dark-purple2;
+$color-background-content : $color-cream;
+
+$color-heading            : lighten( $color-background-main, 15 );
+$color-main               : lighten( $color-background-main, 25 );
+$color-link               : #ba5e01;
+$color-link-hover         : lighten( $color-link, 20 );
