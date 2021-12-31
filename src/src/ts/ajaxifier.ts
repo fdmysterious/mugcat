@@ -72,7 +72,7 @@ export function load( url : string )
 			// Detach objects from imported body and insert into current dynamic wrapper
 			i = body.children.length;
 			while(i > 0) {
-				let ch = body.removeChild(body.children[i-1]);
+				let ch = body.removeChild(body.children[0]);
 				<HTMLElement>ch.classList.add("mod_enter");
 
 				wrapper.appendChild(ch);
