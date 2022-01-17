@@ -37,10 +37,11 @@ def variables(fhandle, variables_list):
 
 def __add_deps(ss, dep):
     """
-    Adds dependency rule to dict ss. Value is a tuple
-    containing a list of dependency file names, and the proper
-    target rule. If dep is a string, no rule is added. Is actually
-    a postfix tree walk.
+    Flattens the dependency tree from dep as a dict containing the
+    depdency name and list of dependency names. Consists of a
+    postfix tree walk (children dependencies first).
+
+    If dependency is a string, no rule is added.
     """
 
     if isinstance(dep, Ninja_Target):
