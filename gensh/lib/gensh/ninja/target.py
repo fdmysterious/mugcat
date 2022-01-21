@@ -27,8 +27,3 @@ class Ninja_Target:
 
     def __str__(self):
         return self.gen_name()
-
-# ┌────────────────────────────────────────┐
-# │ Various tests                          │
-# └────────────────────────────────────────┘
-
