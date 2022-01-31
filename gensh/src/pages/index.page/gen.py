@@ -2,15 +2,24 @@
 
 import gensh.config
 import gensh.ninja
+import sys
+
+from   gensh   import build as gen_build
+from   pathlib import Path
 
 import textwrap
 
+page_dir = (Path(__file__) / "..").resolve()
+
 def rules():
-    print("hello world")
-    print(gensh.config.dirs.pkg_dir)
-    print(gensh.config.vars.lang)
+    return [
+        gen_build.target.page(
+            input_dir   = page_dir,
+            output_slug = "test"
+        )
+    ]
     
-def build():
+def build(f_handle=sys.stdout):
     print(textwrap.dedent("""
     <!DOCTYPE html>
     <html>
@@ -23,4 +32,7 @@ def build():
             <h1>It works!</h1>
         </body>
     </html>
-    """))
+    """), file=f_handle)
+
+if __name__ == "__main__":
+    build()

@@ -1,0 +1,2 @@
+export GENSH_PATH=$(readlink -f $(pwd)/src)
+export PYTHONPATH=$PYTHONPATH:$(pwd)/lib

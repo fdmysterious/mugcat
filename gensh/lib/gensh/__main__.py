@@ -12,16 +12,20 @@
 import argparse
 import importlib
 import sys
+import glob
 
 from   pathlib  import Path
 from . import config
+
+from gensh import config
+from gensh import ninja
+from gensh import build  as gen_build
 
 def import_page_script(p_path: Path):
     p_path = Path(p_path).resolve()
 
     # Add page path to python path
     sys.path.append(str(p_path))
-    print(sys.path)
 
     # Import module
     page_module = importlib.import_module("gen")
@@ -51,8 +55,8 @@ if __name__ == "__main__":
 
     # Generate rules?
     print("Config variables :")
-    print(f"lang        = {config.vars.lang}"       )
-    print(f"path        = {config.vars.path}"       )
+    print(f"lang      = {config.vars.lang}"       )
+    print(f"path      = {config.vars.path}"       )
     print()
     print("Key directories :")
     print(f"pkg_dir   = {config.dirs.pkg_dir}")
@@ -64,4 +68,12 @@ if __name__ == "__main__":
     print(f"templates = {config.dirs.templates}")
     
     page_module = import_page_script(Path(args.page_path))
-    page_module.rules()
+    targets     = page_module.rules()
+
+    # Output rules test
+    ninja.output.rules(sys.stdout, gen_build.rules.r_list)
+    ninja.output.targets(sys.stdout, targets)
+
+    # Find page files
+    for p_find in glob.iglob("**/*.page", root_dir=config.dirs.pages, recursive=True):
+        print(config.dirs.pages / Path(p_find))

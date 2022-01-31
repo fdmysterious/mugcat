@@ -64,7 +64,7 @@ def targets(fhandle, target_list):
 
     # Step 2 # Printing rules
     for rr, dnames in ss.values():
-        print(f"build {rr!s}: {rr.rule} {dnames}", file=fhandle)
+        print(f"build {rr!s}: {rr.rule.name!s} {dnames}", file=fhandle)
         for k,v in rr.params.items():
             print(f"\t{k}={v}", file=fhandle)
         print(file=fhandle) # Empty separation line
