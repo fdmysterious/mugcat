@@ -24,7 +24,7 @@ Folder structure
         layouts: website's layouts
         pages: website's pages
             <name>.page
-                gen: Generator script
+                gen.py: Generator script
                 <other resources>
 
             subfolder/<name>.page
@@ -38,7 +38,11 @@ The generator script uses the following env. variables:
 
 - :code:`GENSH_LANG`: lang code to use (fr, en)
 - :code:`GENSH_PATH`: Path to the GenSH root project
-- :code:`GENSH_OUTPUT_FILE`: Path to the current output file path on local filesystem
 
 These variables are handled by the `gensh.config` module, so that generator scripts have a nice
 interface to cope with.
+
+Python library structure
+========================
+
+**build**: Build configuration (ninja rules)
