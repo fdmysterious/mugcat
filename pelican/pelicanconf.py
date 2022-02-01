@@ -2,36 +2,49 @@
 # │ General information                    │
 # └────────────────────────────────────────┘
 
-AUTHOR        = 'Florian Dupeyron'
-SITENAME      = 'Mugcat'
-SITEURL       = ''
+AUTHOR        = "Florian Dupeyron"
+SITENAME      = "Mugcat"
+SITEURL       = ""
 
-TIMEZONE      = 'Europe/Paris'
-DEFAULT_LANG  = 'fr'
+TIMEZONE      = "Europe/Paris"
+DEFAULT_LANG  = "fr"
+
+
+# ┌────────────────────────────────────────┐
+# │ Theme config                           │
+# └────────────────────────────────────────┘
+
+THEME         = "themes/mugcat"
 
 
 # ┌────────────────────────────────────────┐
 # │ Various links and stuff                │
 # └────────────────────────────────────────┘
 
-LINKS = (('Pelican', 'https://getpelican.com/'),
-         ('Python.org', 'https://www.python.org/'),
-         ('Mugcat', 'https://mugcat.fr'))
+LINKS = (("Pelican", "https://getpelican.com/"),
+         ("Python.org", "https://www.python.org/"),
+         ("Mugcat", "https://mugcat.fr"))
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (("You can add links in your config file", "#"),
+          ("Another social link", "#"),)
 
 
 # ┌────────────────────────────────────────┐
 # │ Paths                                  │
 # └────────────────────────────────────────┘
 
-PATH          = "content/"
-OUTPUT_PATH   = "output/"
+# ───────────────── Input ──────────────── #
 
-PAGES_PATHS   = ["pages"   ]
-ARTICLE_PATHS = ["articles"]
+PATH             = "content/"
+OUTPUT_PATH      = "output/"
+
+PAGES_PATHS      = ["pages"   ]
+ARTICLE_PATHS    = ["articles"]
+
+# ──────────────── Output ──────────────── #
+
+THEME_STATIC_DIR = "assets"
 
 
 # ┌────────────────────────────────────────┐
