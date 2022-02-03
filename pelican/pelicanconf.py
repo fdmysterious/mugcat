@@ -46,6 +46,9 @@ ARTICLE_PATHS    = ["articles"]
 
 THEME_STATIC_DIR = "assets"
 
+PAGE_URL         = "{slug}.html"
+PAGE_SAVE_AS     = PAGE_URL 
+
 
 # ┌────────────────────────────────────────┐
 # │ Blog config.                           │
@@ -65,3 +68,10 @@ CATEGORY_FEED_ATOM    = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM      = None
 AUTHOR_FEED_RSS       = None
+
+
+# ┌────────────────────────────────────────┐
+# │ Build config.                          │
+# └────────────────────────────────────────┘
+
+DELETE_OUTPUT_DIRECTORY = True
