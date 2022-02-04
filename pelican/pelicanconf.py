@@ -49,13 +49,18 @@ THEME_STATIC_DIR = "assets"
 PAGE_URL         = "{slug}.html"
 PAGE_SAVE_AS     = PAGE_URL 
 
+ARTICLE_URL      = "{category}/{slug}.html"
+ARTICLE_SAVE_AS  = ARTICLE_URL
+
+CATEGORY_URL     = "{slug}/index.html"
+CATEGORY_SAVE_AS = CATEGORY_URL
 
 # ┌────────────────────────────────────────┐
 # │ Blog config.                           │
 # └────────────────────────────────────────┘
 
 USE_FOLDER_AS_CATEGORY = True
-DEFAULT_PAGINATION = False
+DEFAULT_PAGINATION     = False
 
 
 # ┌────────────────────────────────────────┐
@@ -63,11 +68,11 @@ DEFAULT_PAGINATION = False
 # └────────────────────────────────────────┘
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM         = None
-CATEGORY_FEED_ATOM    = None
-TRANSLATION_FEED_ATOM = None
-AUTHOR_FEED_ATOM      = None
-AUTHOR_FEED_RSS       = None
+FEED_ALL_ATOM          = None
+CATEGORY_FEED_ATOM     = None
+TRANSLATION_FEED_ATOM  = None
+AUTHOR_FEED_ATOM       = None
+AUTHOR_FEED_RSS        = None
 
 
 # ┌────────────────────────────────────────┐
