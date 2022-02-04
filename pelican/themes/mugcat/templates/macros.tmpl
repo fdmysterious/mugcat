@@ -12,7 +12,7 @@
 
 	{% if DISPLAY_PAGES_ON_MENU %}
 		{% for p in pages %}
-			{{ nav_link('cogs', p.title, p.url ) }}
+			{{ nav_link(p.icon or 'cogs', p.title, p.url ) }}
 		{% endfor %}
 	{% endif %}
 

@@ -2,7 +2,8 @@
 Test page
 =========
 
-:Authors: - Florian Dupeyron <florian.dupeyron@mugcat.fr>
-:Date:     February 2022
+:authors: - Florian Dupeyron <florian.dupeyron@mugcat.fr>
+:date:     February 2022
+:icon:     eye
 
 Ceci est un test de page
