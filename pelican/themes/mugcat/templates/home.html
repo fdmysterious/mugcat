@@ -1,32 +1,10 @@
 {% extends "base.html" %}
+{% from "macros.tmpl" import homelinks with context %}
 
 {% block main_nav %}
 <nav class="main-nav mod_hidden" role="navigation">
 	<main class="main-nav_content">
-		{% for title, link in MENUITEMS %}
-		<a class="nav-link" href="{{ link }}">
-			<i class="fa fa-cogs"></i>
-			<span class="subtitle">{{ title }}</span>
-		</a>
-		{% endfor %}
-
-		{% if DISPLAY_PAGES_ON_MENU %}
-			{% for p in pages %}
-			<a class="nav-link" href="{{ SITEURL }}/{{ p.url }}">
-				<i class="fa fa-cogs"></i>
-				<span class="subtitle">{{ p.title }}</span>
-			</a>
-			{% endfor %}
-		{% endif %}
-
-		{% if DISPLAY_CATEGORIES_ON_MENU %}
-			{% for cat, null in categories %}
-			<a class="nav-link" href="{{ SITEURL }}/{{ cat.url }}">
-				<i class="fa fa-cogs"></i>
-				<span class="subtitle">{{ cat }}</span>
-			</a>
-			{% endfor %}
-		{% endif %}
+		{{ homelinks() }}
 	</main>
 </nav>
 {% endblock main_nav %}
@@ -38,14 +16,7 @@
 		{{ page.content }}
 
 		<div class="home-links">
-			{% if DISPLAY_PAGES_ON_MENU %}
-				{% for p in pages %}
-				<a class="nav-link" href="{{ SITEURL }}/{{ p.url }}">
-					<i class="fa fa-cogs"></i>
-					<span class="subtitle">{{ p.title }}</span>
-				</a>
-				{% endfor %}
-			{% endif %}
+			{{ homelinks() }}
 		</div>
 	</div>
 </div>
