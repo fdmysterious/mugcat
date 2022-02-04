@@ -18,7 +18,7 @@
 
 	{% if DISPLAY_CATEGORIES_ON_MENU %}
 		{% for cat, null in categories %}
-			{{ nav_link('cogs', cat, cat.url) }}
+			{{ nav_link(cat.icon or 'cogs', cat, cat.url) }}
 		{% endfor %}
 	{% endif %}
 {% endmacro %}
