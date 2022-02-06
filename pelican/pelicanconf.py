@@ -53,13 +53,13 @@ ARTICLE_PATHS    = ["articles"]
 
 THEME_STATIC_DIR = "assets"
 
-PAGE_URL         = "{slug}.html"
+PAGE_URL         = DEFAULT_LANG + "/{slug}.html"
 PAGE_SAVE_AS     = PAGE_URL 
 
-ARTICLE_URL      = "{category}/{slug}.html"
+ARTICLE_URL      = DEFAULT_LANG + "/{category}/{slug}.html"
 ARTICLE_SAVE_AS  = ARTICLE_URL
 
-CATEGORY_URL     = "{slug}/index.html"
+CATEGORY_URL     = DEFAULT_LANG + "/{slug}/index.html"
 CATEGORY_SAVE_AS = CATEGORY_URL
 
 # ┌────────────────────────────────────────┐

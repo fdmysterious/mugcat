@@ -5,6 +5,7 @@ A propos
 :authors: - Florian Dupeyron <florian.dupeyron@mugcat.fr>
 :date: 2022-02-04
 :icon: user-o
+:slug: about
 
 Je m'appelle Florian Dupeyron. J'ai actuellement 24 ans, et travaille en tant qu'ingénieur en logiciel
 embarqué au sein du bureau d'études parisien de `ELSYS Design`_.
