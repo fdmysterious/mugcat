@@ -27,9 +27,7 @@
 {% endif %}
 <section id="article">
 	<h1>
-		<a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
-			{{ article.title }}
-		</a>
+		{{ article.title }}
 	</h1>
 
 	{% import 'translations.html' as translations with context %}

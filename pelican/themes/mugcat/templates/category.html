@@ -1,8 +1,27 @@
-{% extends "index.html" %}
+{% extends "base_content.html" %}
 
-{% block title %}{{ SITENAME }} - {{ category }} category{% endblock %}
+{% block title %}{{ category }} - {{ SITENAME }}{% endblock %}
 
-{% block content_title %}
-<h2>Articles in the {{ category }} category</h2>
+{% block content %}
+<h1>{{category}}</h1>
+<nav class="portfolio-links">
+	{% for article in articles_page.object_list %}
+	<a href="{{ SITEURL }}/{{ article.url }}">
+		<figure>
+			<div class="img-wrapper">
+				<img src="{{SITEURL}}/assets/img/article-default_logo.png"/>
+			</div>
+			<figcaption>
+				<time class="published" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time><br/>
+				{{ article.title }}
+			</figcaption>
+		</figure>
+	</a>
+	{% endfor %}
+</nav>
+
+{% if articles_page.has_other_pages() %}
+    {% include 'pagination.html' %}
+{% endif %}
 {% endblock %}
 
