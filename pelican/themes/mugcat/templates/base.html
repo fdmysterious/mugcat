@@ -7,10 +7,12 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-		<title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+		<title>
+			{% block title %}{{ SITENAME }}{% endblock title %}
+		</title>
 
-		<!-- Stylesheet -->>
-		<link rel="stylesheet" href="{{ SITEURL }}/assets/css/index.css">
+		<!-- Stylesheet -->
+		<link rel="stylesheet" href="{{ SITEURL }}/assets/css/index.css"/>
 
 		<!-- Feeds -->
 		{% if FEED_ALL_ATOM %}
