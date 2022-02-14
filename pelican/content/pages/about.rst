@@ -28,10 +28,10 @@ Parcours
     Entrée en Master SESI_: Systèmes Électroniques et Systèmes Informatiques, à Sorbonne-Université.
 
     **Compétences développées :**
-    - Architecture des processeurs (CPU, GPU, ManyCore) ;
-    - Conception de circuits intégrés ;
-    - Programmation embarquée ;
-    - Conception FPGA.
+        - Architecture des processeurs (CPU, GPU, ManyCore) ;
+        - Conception de circuits intégrés ;
+        - Programmation embarquée ;
+        - Conception FPGA.
 
 06/2019
     - Obtention licence EEA à Sorbonne Université ; mention bien

@@ -9,7 +9,11 @@
 	<a href="{{ SITEURL }}/{{ article.url }}">
 		<figure>
 			<div class="img-wrapper">
+				{% if article.thumb %}
+				<img src="{{SITEURL}}/{{ article.thumb }}"/>
+				{% else %}
 				<img src="{{SITEURL}}/assets/img/article-default_logo.png"/>
+				{% endif %}
 			</div>
 			<figcaption>
 				<time class="published" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time><br/>
