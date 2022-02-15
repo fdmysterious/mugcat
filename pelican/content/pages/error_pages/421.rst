@@ -3,6 +3,7 @@
 ======================================
 :status: hidden
 :template: page_error
-:error_cat: hipster_cat.jpg
+:error_cat: keyboard_cat.jpg
+:slug: err/421
 
 La requête a été envoyée à un serveur qui n'est pas capable de produire une réponse.

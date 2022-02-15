@@ -3,6 +3,7 @@
 =========
 :status: hidden
 :template: page_error
-:error_cat: grumpy_mug.jpg
+:error_cat: happy_cat.jpg
+:slug: err/410
 
 La ressource n'est plus disponible et aucune adresse de redirection n’est connue.

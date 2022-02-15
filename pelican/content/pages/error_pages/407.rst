@@ -3,6 +3,7 @@
 ==================================
 :status: hidden
 :template: page_error
-:error_cat: cosis.jpg
+:error_cat: keyboard_cat.jpg
+:slug: err/407
 
 Accès à la ressource autorisé par identification avec le proxy.

@@ -3,6 +3,7 @@
 ================
 :status: hidden
 :template: page_error
-:error_cat: grumpy_mug.jpg
+:error_cat: nyan.jpg
+:slug: err/400
 
 La syntaxe de la requête est erronée.

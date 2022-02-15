@@ -3,6 +3,7 @@
 =========================
 :status: hidden
 :template: page_error
-:error_cat: cosis.jpg
+:error_cat: business.jpg
+:slug: err/414
 
 URI trop longue.

@@ -3,6 +3,7 @@
 =====================
 :status: hidden
 :template: page_error
-:error_cat: internet-cat.jpg
+:error_cat: happy_cat.jpg
+:slug: err/402
 
 Paiement requis pour accéder à la ressource.

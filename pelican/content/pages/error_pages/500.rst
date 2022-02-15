@@ -3,6 +3,7 @@
 ==========================
 :status: hidden
 :template: page_error
-:error_cat: business.jpg
+:error_cat: nyan.jpg
+:slug: err/500
 
 Erreur interne du serveur.

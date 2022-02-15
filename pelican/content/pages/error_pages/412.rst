@@ -3,6 +3,7 @@
 ========================
 :status: hidden
 :template: page_error
-:error_cat: internet-cat.jpg
+:error_cat: cat_computer_1.jpg
+:slug: err/412
 
 Préconditions envoyées par la requête non vérifiées.

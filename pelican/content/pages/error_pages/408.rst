@@ -3,6 +3,7 @@
 =====================
 :status: hidden
 :template: page_error
-:error_cat: grumpy_mug.jpg
+:error_cat: nyan.jpg
+:slug: err/408
 
 Temps d’attente d’une requête du client, écoulé côté serveur. D'après les spécifications HTTP : « Le client n'a pas produit de requête dans le délai que le serveur était prêt à attendre. Le client PEUT répéter la demande sans modifications à tout moment ultérieur »13.

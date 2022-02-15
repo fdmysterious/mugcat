@@ -3,6 +3,7 @@
 ===========================
 :status: hidden
 :template: page_error
-:error_cat: business.jpg
+:error_cat: hipster_cat.jpg
+:slug: err/415
 
 Format de requête non supporté pour une méthode et une ressource données.

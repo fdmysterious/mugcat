@@ -3,6 +3,7 @@
 ==============
 :status: hidden
 :template: page_error
-:error_cat: grumpy_mug.jpg
+:error_cat: happy_cat.jpg
+:slug: err/425
 
 RFC 847015 : le serveur ne peut traiter la demande car elle risque d'être rejouée.

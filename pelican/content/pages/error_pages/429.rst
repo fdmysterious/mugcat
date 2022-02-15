@@ -3,6 +3,7 @@
 ======================
 :status: hidden
 :template: page_error
-:error_cat: keyboard_cat.jpg
+:error_cat: internet-cat.jpg
+:slug: err/429
 
 RFC 658518 : le client a émis trop de requêtes dans un délai donné.

@@ -3,6 +3,7 @@
 ==============
 :status: hidden
 :template: page_error
-:error_cat: hipster_cat.jpg
+:error_cat: cosis.jpg
+:slug: err/404
 
 Ressource non trouvée.

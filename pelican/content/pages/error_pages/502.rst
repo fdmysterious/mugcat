@@ -3,6 +3,7 @@
 ===============================
 :status: hidden
 :template: page_error
-:error_cat: grumpy_mug.jpg
+:error_cat: cosis.jpg
+:slug: err/502
 
 En agissant en tant que serveur proxy ou passerelle, le serveur a reçu une réponse invalide depuis le serveur distant.

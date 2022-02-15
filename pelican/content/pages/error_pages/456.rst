@@ -3,6 +3,7 @@
 ========================
 :status: hidden
 :template: page_error
-:error_cat: cosis.jpg
+:error_cat: grumpy_mug.jpg
+:slug: err/456
 
 WebDAV : Erreur irrécupérable.

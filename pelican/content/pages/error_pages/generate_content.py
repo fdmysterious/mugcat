@@ -34,5 +34,6 @@ with open("errcontent") as fhandle:
             print(f":status: hidden", file=f_error)
             print(f":template: page_error", file=f_error)
             print(f":error_cat: {randcat.name}", file=f_error)
+            print(f":slug: err/{err_code}", file=f_error)
             print("", file=f_error)
             print(err_desc, file=f_error)

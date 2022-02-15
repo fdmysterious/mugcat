@@ -3,6 +3,7 @@
 ====================================
 :status: hidden
 :template: page_error
-:error_cat: business.jpg
+:error_cat: hipster_cat.jpg
+:slug: err/431
 
 RFC 658518 : Les entêtes HTTP émises dépassent la taille maximale admise par le serveur.

@@ -3,6 +3,7 @@
 ==================================
 :status: hidden
 :template: page_error
-:error_cat: business.jpg
+:error_cat: happy_cat.jpg
+:slug: err/416
 
 Champs d’en-tête de requête « range » incorrect.

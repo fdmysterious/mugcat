@@ -3,6 +3,7 @@
 =================
 :status: hidden
 :template: page_error
-:error_cat: happy_cat.jpg
+:error_cat: internet-cat.jpg
+:slug: err/401
 
 Une authentification est nécessaire pour accéder à la ressource.

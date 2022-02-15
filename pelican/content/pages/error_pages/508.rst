@@ -3,6 +3,7 @@
 ==================
 :status: hidden
 :template: page_error
-:error_cat: nyan.jpg
+:error_cat: grumpy_mug.jpg
+:slug: err/508
 
 WebDAV : Boucle dans une mise en relation de ressources (RFC 584223).

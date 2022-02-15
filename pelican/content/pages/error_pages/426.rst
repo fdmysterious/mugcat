@@ -3,6 +3,7 @@
 =====================
 :status: hidden
 :template: page_error
-:error_cat: keyboard_cat.jpg
+:error_cat: nyan.jpg
+:slug: err/426
 
 RFC 281716 : Le client devrait changer de protocole, par exemple au profit de TLS/1.0.

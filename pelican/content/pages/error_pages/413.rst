@@ -3,6 +3,7 @@
 =============================
 :status: hidden
 :template: page_error
-:error_cat: grumpy_mug.jpg
+:error_cat: internet-cat.jpg
+:slug: err/413
 
 Traitement abandonné dû à une requête trop importante.
