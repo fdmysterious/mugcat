@@ -1,0 +1,8 @@
+========================
+456: Unrecoverable Error
+========================
+:status: hidden
+:template: page_error
+:error_cat: cosis.jpg
+
+WebDAV : Erreur irrécupérable.

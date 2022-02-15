@@ -1,0 +1,8 @@
+========================
+412: Precondition Failed
+========================
+:status: hidden
+:template: page_error
+:error_cat: internet-cat.jpg
+
+Préconditions envoyées par la requête non vérifiées.

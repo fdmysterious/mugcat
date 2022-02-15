@@ -1,0 +1,8 @@
+===================
+424: Method failure
+===================
+:status: hidden
+:template: page_error
+:error_cat: keyboard_cat.jpg
+
+WebDAV : Une méthode de la transaction a échoué.

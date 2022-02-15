@@ -1,0 +1,8 @@
+=================
+418: I’m a teapot
+=================
+:status: hidden
+:template: page_error
+:error_cat: keyboard_cat.jpg
+
+« Je suis une théière » : Ce code est défini dans la RFC 232414 datée du 1er avril 1998, Hyper Text Coffee Pot Control Protocol.

@@ -1,0 +1,8 @@
+====================================
+431: Request Header Fields Too Large
+====================================
+:status: hidden
+:template: page_error
+:error_cat: business.jpg
+
+RFC 658518 : Les entêtes HTTP émises dépassent la taille maximale admise par le serveur.

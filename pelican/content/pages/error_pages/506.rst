@@ -1,0 +1,8 @@
+============================
+506: Variant Also Negotiates
+============================
+:status: hidden
+:template: page_error
+:error_cat: mgs.jpg
+
+RFC 229522 : Erreur de négociation. Transparent content negociation.

@@ -1,0 +1,8 @@
+=========================
+414: Request-URI Too Long
+=========================
+:status: hidden
+:template: page_error
+:error_cat: cosis.jpg
+
+URI trop longue.

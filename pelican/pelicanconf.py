@@ -46,7 +46,7 @@ SOCIAL = (("You can add links in your config file", "#"),
 PATH             = "content/"
 OUTPUT_PATH      = "output/"
 
-PAGES_PATHS      = ["pages"   ]
+PAGES_PATHS      = ["pages"]
 ARTICLE_PATHS    = ["articles"]
 
 # ──────────────── Output ──────────────── #

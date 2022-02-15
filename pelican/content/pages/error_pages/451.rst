@@ -1,0 +1,8 @@
+==================================
+451: Unavailable For Legal Reasons
+==================================
+:status: hidden
+:template: page_error
+:error_cat: keyboard_cat.jpg
+
+La ressource demandée est inaccessible pour des raisons d'ordre légal.

@@ -1,0 +1,8 @@
+=========================
+422: Unprocessable entity
+=========================
+:status: hidden
+:template: page_error
+:error_cat: mgs.jpg
+
+WebDAV : L’entité fournie avec la requête est incompréhensible ou incomplète.

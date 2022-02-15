@@ -1,0 +1,8 @@
+================
+400: Bad Request
+================
+:status: hidden
+:template: page_error
+:error_cat: grumpy_mug.jpg
+
+La syntaxe de la requête est erronée.

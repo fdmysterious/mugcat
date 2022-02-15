@@ -1,0 +1,8 @@
+====================
+411: Length Required
+====================
+:status: hidden
+:template: page_error
+:error_cat: cosis.jpg
+
+La longueur de la requête n’a pas été précisée.

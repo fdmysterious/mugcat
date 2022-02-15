@@ -1,0 +1,8 @@
+==============
+404: Not Found
+==============
+:status: hidden
+:template: page_error
+:error_cat: hipster_cat.jpg
+
+Ressource non trouvée.

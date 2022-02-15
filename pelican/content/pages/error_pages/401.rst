@@ -1,0 +1,8 @@
+=================
+401: Unauthorized
+=================
+:status: hidden
+:template: page_error
+:error_cat: happy_cat.jpg
+
+Une authentification est nécessaire pour accéder à la ressource.

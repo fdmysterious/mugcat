@@ -1,0 +1,8 @@
+=======================
+417: Expectation failed
+=======================
+:status: hidden
+:template: page_error
+:error_cat: mgs.jpg
+
+Comportement attendu et défini dans l’en-tête de la requête insatisfaisante.

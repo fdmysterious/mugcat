@@ -1,0 +1,8 @@
+======================================
+421: Bad mapping / Misdirected Request
+======================================
+:status: hidden
+:template: page_error
+:error_cat: hipster_cat.jpg
+
+La requête a été envoyée à un serveur qui n'est pas capable de produire une réponse.

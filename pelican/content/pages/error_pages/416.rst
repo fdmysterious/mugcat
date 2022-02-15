@@ -1,0 +1,8 @@
+==================================
+416: Requested range unsatisfiable
+==================================
+:status: hidden
+:template: page_error
+:error_cat: business.jpg
+
+Champs d’en-tête de requête « range » incorrect.

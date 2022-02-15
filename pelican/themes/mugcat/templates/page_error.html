@@ -1,0 +1,27 @@
+{% extends "base_content.html" %}
+{% block html_lang %}{{ page.lang }}{% endblock %}
+
+{% block title %}{{ SITENAME }} - Erreur {{ page.title|striptags }}{%endblock%}
+
+{% block head %}
+  {{ super() }}
+
+  {% import 'translations.html' as translations with context %}
+  {% if translations.entry_hreflang(page) %}
+    {{ translations.entry_hreflang(page) }}
+  {% endif %}
+{% endblock %}
+
+{% block content %}
+    <h1>{{ page.title }}</h1>
+    {% import 'translations.html' as translations with context %}
+    {{ translations.translations_for(page) }}
+
+	<figure class="full-width">
+		<div class="img-wrapper">
+			<img src="{{ SITEURL }}/images/cats/{{ page.error_cat or "mgs.jpg" }}">
+		</div>
+	</figure>
+
+    {{ page.content }}
+{% endblock %}

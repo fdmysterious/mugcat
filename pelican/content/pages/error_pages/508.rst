@@ -1,0 +1,8 @@
+==================
+508: Loop detected
+==================
+:status: hidden
+:template: page_error
+:error_cat: nyan.jpg
+
+WebDAV : Boucle dans une mise en relation de ressources (RFC 584223).

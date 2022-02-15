@@ -1,0 +1,8 @@
+=========================
+507: Insufficient storage
+=========================
+:status: hidden
+:template: page_error
+:error_cat: internet-cat.jpg
+
+WebDAV : Espace insuffisant pour modifier les propriétés ou construire la collection.

@@ -1,0 +1,8 @@
+=============================
+413: Request Entity Too Large
+=============================
+:status: hidden
+:template: page_error
+:error_cat: grumpy_mug.jpg
+
+Traitement abandonné dû à une requête trop importante.

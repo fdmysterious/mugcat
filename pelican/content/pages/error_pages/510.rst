@@ -1,0 +1,8 @@
+=================
+510: Not extended
+=================
+:status: hidden
+:template: page_error
+:error_cat: happy_cat.jpg
+
+RFC 277424 : La requête ne respecte pas la politique d'accès aux ressources HTTP étendues.

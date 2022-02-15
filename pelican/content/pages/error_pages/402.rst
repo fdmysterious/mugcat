@@ -1,0 +1,8 @@
+=====================
+402: Payment Required
+=====================
+:status: hidden
+:template: page_error
+:error_cat: internet-cat.jpg
+
+Paiement requis pour accéder à la ressource.

@@ -1,0 +1,8 @@
+==========================
+428: Precondition Required
+==========================
+:status: hidden
+:template: page_error
+:error_cat: keyboard_cat.jpg
+
+RFC 658517 : La requête doit être conditionnelle.

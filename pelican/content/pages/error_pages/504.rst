@@ -1,0 +1,8 @@
+=====================
+504: Gateway Time-out
+=====================
+:status: hidden
+:template: page_error
+:error_cat: grumpy_mug.jpg
+
+Temps d’attente d’une réponse d’un serveur à un serveur intermédiaire écoulé.

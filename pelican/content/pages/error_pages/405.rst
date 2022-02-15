@@ -1,0 +1,8 @@
+=======================
+405: Method Not Allowed
+=======================
+:status: hidden
+:template: page_error
+:error_cat: cosis.jpg
+
+Méthode de requête non autorisée.

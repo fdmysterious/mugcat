@@ -1,0 +1,8 @@
+===========================
+415: Unsupported Media Type
+===========================
+:status: hidden
+:template: page_error
+:error_cat: business.jpg
+
+Format de requête non supporté pour une méthode et une ressource données.

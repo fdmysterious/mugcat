@@ -1,0 +1,8 @@
+==================================
+407: Proxy Authentication Required
+==================================
+:status: hidden
+:template: page_error
+:error_cat: cosis.jpg
+
+Accès à la ressource autorisé par identification avec le proxy.

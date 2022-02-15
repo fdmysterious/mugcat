@@ -1,0 +1,8 @@
+===============
+449: Retry With
+===============
+:status: hidden
+:template: page_error
+:error_cat: business.jpg
+
+Code défini par Microsoft. La requête devrait être renvoyée après avoir effectué une action.
