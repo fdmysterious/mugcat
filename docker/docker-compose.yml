@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+    mugcat_nginx:
+        container_name: "mugcat_nginx"
+        image: "mugcat:nginx"
+        ports:
+            - 80:80
+            - 443:443
+
+        volumes:
+            - type: bind
+              source: ./files
+              target: /files/
+              read_only: true
+
+            - type: bind
+              source: /etc/letsencrypt
+              target: /etc/letsencrypt
+              read_only: true

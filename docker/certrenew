@@ -1,0 +1,3 @@
+docker run -it --rm --name certbot -p 80:80 -p 443:443 -v "/etc/letsencrypt:/etc/letsencrypt" -v "/var/lib/letsencrypt:/var/lib/letsencrypt" certbot/certbot renew --standalone --email "florian.dupeyron@mugcat.fr" --cert-name "mugcat.fr" 
+
+docker run -it --rm --name certbot -p 80:80 -p 443:443 -v "/etc/letsencrypt:/etc/letsencrypt" -v "/var/lib/letsencrypt:/var/lib/letsencrypt" certbot/certbot renew --standalone --email "florian.dupeyron@mugcat.fr" --cert-name "files.mugcat.fr"
