@@ -10,7 +10,6 @@ A propos
 Je m'appelle Florian Dupeyron. J'ai actuellement 24 ans, et travaille en tant qu'ingénieur en logiciel
 embarqué au sein du bureau d'études parisien de `ELSYS Design`_.
 
-.. _`ELSYS Design`: https://www.elsys-design.com/fr/
 
 Passionné d'informatique et d'électronique, il me tient à coeur d'intervenir à l'interface entre le monde
 physique et numérique.
@@ -21,10 +20,27 @@ musicales à base d'électroniquet et d'informatique.
 Parcours
 --------
 
-09/2020
-    Entrée au Diplôme Universitaire `Etudiant Entrepreneur`_ (D2E), au CELSA_ de Sorbonne Université.
+09/2021-?
+    Ingénieur en systèmes embarqués au sein du bureau d'études d'`ELSYS Design`_.
 
-09/2019
+    **Compétences développées :**
+        - Validation driver windows
+        - Programmation microcontrôleur
+        - Bancs de validation en python
+        - TODO
+
+03/2021-09/2021
+    Stage de fin d'études chez `ELSYS Design`_ : Conception d'un driver linux PCIe *endpoint*.
+
+    **Compétences développées :**
+        - *Développement driver linux* : en C sur cible embarquée sous environnement Xilinx (Vitis) ;
+        - *Intégration* : Intégration dans Yocto / Petalinux, encapsulé dans un conteneur Docker ;
+        - *Méthodologie Agile + Cycle en V* : Livraisons régulières et versionnées, points réguliers avec l'équipe.
+
+06/2021
+    Obtention du Diplôme Universitaire `Etudiant Entrepreneur`_ (D2E), au CELSA_ de Sorbonne Université.
+
+09/2021
     Entrée en Master SESI_: Systèmes Électroniques et Systèmes Informatiques, à Sorbonne-Université.
 
     **Compétences développées :**
@@ -33,18 +49,18 @@ Parcours
         - Programmation embarquée ;
         - Conception FPGA.
 
-06/2019
-    - Obtention licence EEA à Sorbonne Université ; mention bien
-
 10/2018-03/2021
     Travail chez HyVibe_ en tant que microentrepreneur :
-        - conception et développement d'une suite matérielle et logicielle
-          de grade industriel de banc de test électronique.
-        - Assurance qualité des protuis : procédure de validation fonctionnelle, suivi
+        - Conception et développement d'une suite matérielle et logicielle
+          à visée industrielle de banc de test électronique.
+        - Assurance qualité des produits : procédure de validation fonctionnelle, suivi
           de données (synchronisation de plusieurs PC en usine avec une base de donnée).
         - Développement embarqué sur stm32h7 (cortex-m7).
         - Développement PC sous linux (python, bash, systemd).
         - Conception et prototypage de PCB pour usage interne.
+
+06/2019
+    - Obtention licence EEA à Sorbonne Université ; mention bien
 
 Été 2018
     Stage chez HyVibe_ : développement pilotes bas niveau, prototypage et validation de matériel.
@@ -74,3 +90,5 @@ Github
 
 .. _`Florian Dupeyron`: https://linkedin.com/in/florian-dupeyron
 .. _fdmysterious: https://github.com/fdmysterious
+
+.. _`ELSYS Design`: https://www.elsys-design.com/fr/
