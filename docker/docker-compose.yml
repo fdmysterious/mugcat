@@ -3,9 +3,12 @@ services:
     mugcat_nginx:
         container_name: "mugcat_nginx"
         image: "mugcat:nginx"
-        ports:
-            - 80:80
-            - 443:443
+        expose:
+          - "80"
+
+          #ports:
+          #    - 80:80
+          #    - 443:443
 
         volumes:
             - type: bind
