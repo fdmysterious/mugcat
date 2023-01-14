@@ -3,31 +3,48 @@ A propos
 ========
 
 :authors: - Florian Dupeyron <florian.dupeyron@mugcat.fr>
-:date: 2022-02-04
+:date: 2023-01-14
 :icon: user-o
 :slug: about
 
-Je m'appelle Florian Dupeyron. J'ai actuellement 24 ans, et travaille en tant qu'ingénieur en logiciel
+.. TODO: Lien pyxnet
+
+Je m'appelle Florian Dupeyron. J'ai actuellement 25 ans, et travaille en tant qu'ingénieur en logiciel
 embarqué au sein du bureau d'études parisien de `ELSYS Design`_.
 
-
 Passionné d'informatique et d'électronique, il me tient à coeur d'intervenir à l'interface entre le monde
-physique et numérique.
+physique et numérique sur des projets exigeants, tout en améliorant continuellement mes techniques pour 
+devenir un artisan habile.
 
-Je suis également passioné par la musique : piano, basse, guitare, batterie... et bien sûr expérimentations
-musicales à base d'électroniquet et d'informatique.
+Amateur de musique, je pratique le piano, et depuis septembre 2022, l'orgue.
+
 
 Parcours
 --------
 
 09/2021-?
-    Ingénieur en systèmes embarqués au sein du bureau d'études d'`ELSYS Design`_.
+    Ingénieur en systèmes embarqués au sein du bureau d'études d'`ELSYS Design`_. Ma mission consiste à intevenir,
+    pour des clients grands comptes, au sein du développement et de la maintenance de
+    logiciels embarqués complexes.
+
+    Depuis septembre 2022, j'ai été promu au bureau d'étude du centre d'Ile-de-France.
+    Ce nouveau poste m'amène, en plus de répondre aux besoins clients, à développer
+    mon expertise, pour afin de pouvoir, à terme, encadrer des ingénieurs sur divers projets.
+    Cette capitalisation passe aussi par la création de projets open-source, comme le projet
+    `pyxnet`.
 
     **Compétences développées :**
-        - Validation driver windows
-        - Programmation microcontrôleur
-        - Bancs de validation en python
-        - TODO
+        - *Développement bare-metal* : Développement C bare-metal sur cibles diverses (STM32, MCC56F83, ...)
+        - *Encapsulation des toolchain* : Effort d'intégration des toolchain sur suite CMake + Docker, afin
+          d'encourager par exemple l'utilisation de pipelines pour adopter des
+          pratiques CI/CD
+        - *Création de bancs de test automatiques* : Création de bancs de test automatiques sous linux pour validation
+          du matériel, avec un effort mis sur l'automatisation des tests tout en adoptant un formalisme de spécification
+          simple (Gherkin). Je contribue également à cet effet au projet Panduza_.
+        - *Capitalisation du savoir* : Capitalisation du savoir acquis en interne via un wiki disponible aux collaborateurs
+          de l'entreprise à l'échelle nationale.
+
+        .. _Panduza: https://github.com/panduza
 
 03/2021-09/2021
     Stage de fin d'études chez `ELSYS Design`_ : Conception d'un driver linux PCIe *endpoint*.
@@ -71,9 +88,9 @@ Parcours
 09/2017-01/2018
     Erasmus de six mois à l'Université de Vienne : études de Mathématiques et Musicologie.
 
-.. _`Etudiant Entrepreneur`: https://TODO.com
-.. _SESI: https://TODO.com
-.. _CELSA: https://TODO.com
+.. _`Etudiant Entrepreneur`: https://www.enseignementsup-recherche.gouv.fr/fr/statut-national-etudiant-entrepreneur-46412
+.. _SESI: https://sciences.sorbonne-universite.fr/formation-sciences/masters/master-informatique/parcours-sesi
+.. _CELSA: http://www.celsa.fr/
 .. _HyVibe: https://hyvibe.audio
 
 Contact
