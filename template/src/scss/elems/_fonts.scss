@@ -20,11 +20,11 @@
 );
 
 //////////////////////
-@include create-font(
-    "Quicksand",
-    "Quicksand-Regular",
-    "quicksand/Quicksand-Regular"
-);
+//@include create-font(
+//    "Quicksand",
+//    "Quicksand-Regular",
+//    "quicksand/Quicksand-Regular"
+//);
 
 //@include create-font(
 //    "FiraSans",
@@ -33,4 +33,8 @@
 //    300
 //);
 
-
+@include create-font(
+	"Assistant",
+	"Assistant Bold",
+	"assistant/Assistant-Bold"
+);

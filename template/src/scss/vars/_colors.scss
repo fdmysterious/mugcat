@@ -26,6 +26,11 @@ $color-black       : #111014;
 $color-white       : #FFFBF7;
 $color-toledo      : #211218;
 
+$color-v2-dark-grey:  #111014;
+$color-v2-ocean-blue: #244666;
+$color-v2-african-violet: #AA78A7;
+$color-v2-bluegrey: #A6C2CE;
+
 //////////////////////////////////////////
 // Main colors
 //////////////////////////////////////////
@@ -38,17 +43,18 @@ $color-toledo      : #211218;
 //$color-link               : #ba5e01;
 //$color-link-hover         : lighten( $color-link, 20 );
 
-$color-background-main     : $color-toledo;
+$color-background-main     : $color-v2-dark-grey;
 $color-background-content  : $color-coffee;
 $color-heading             : lighten( $color-background-main, 15 );
-$color-main                : lighten( $color-background-main, 25 );
+$color-main                : lighten( $color-background-main, 20 );
 $color-link                : $color-wood;
 $color-link-hover          : lighten( $color-link, 20 );
 
-$color-nav-link            : $color-sweet;
-$color-portfolio-figcaption: $color-sweet;
+$color-nav-link            : $color-wood;
 
-$color-button-main         : $color-sweet;
+$color-portfolio-figcaption: $color-wood;
+
+$color-button-main         : $color-wood;
 $color-button-hover        : $color-coffee;
 
 $color-button-primary-bg   : $color-chocolate;
