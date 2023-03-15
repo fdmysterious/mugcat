@@ -1,0 +1,47 @@
+@keyframes reveal {
+	from {
+		transform: translateY(-1em);
+		opacity: 0;
+	}
+
+	to {
+		transform: none;
+		opacity: 1;
+	}
+}
+
+@keyframes reveal-right {
+	from {
+		transform: translateX(+1em);
+		opacity: 0;
+	}
+
+	to {
+		transform: none;
+		opacity: 1;
+	}
+}
+
+@keyframes reveal-bottom {
+	from {
+		transform: translateY(+1em);
+		opacity: 0;
+	}
+
+	to {
+		transform: none;
+		opacity: 1;
+	}
+}
+
+.animation-reveal-1 {
+	animation: 2s ease-in-out 0s 1 normal both running reveal;
+}
+
+.animation-reveal-2 {
+	animation: 2s ease-in-out 0.2s 1 normal both running reveal-right;
+}
+
+.animation-reveal-3 {
+animation: 1.5s ease-in-out 1.5s 1 normal both running reveal-bottom;
+}

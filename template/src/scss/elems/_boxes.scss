@@ -35,6 +35,8 @@ body
         $size-main-container-margin
     );
 
+	border-radius: 5px;
+
     z-index: 200;
 
     padding : 2em;
@@ -166,6 +168,8 @@ body
     overflow : visible;
 
     color : $color-nav-link;
+
+	text-shadow: 2px 2px 0px darken($color-nav-link, 30);
 
     &:hover {
         color : lighten( $color-nav-link, 20 );
@@ -381,7 +385,8 @@ figure.full-width {
     z-index : 1;
     // End of section //
 
-    p{ text-align : center; }
+    //p{ text-align : center; }
+	p { text-align: left; }
 
     font-size : 1.5rem;
 
@@ -405,9 +410,13 @@ figure.full-width {
     //color : $color-cream;
     color: $color-background-content;
     h1 {
-        text-align : center;
+        //text-align : center;
+		text-align: left;
         color : $color-wood;
-        font-size : 3rem;
+        font-size : 4.5rem;
+		font-weight: bold;
+
+		text-shadow: 2px 2px 0px darken($color-wood, 30);
     }
 
     @media( max-width : $size-phablet ) {
