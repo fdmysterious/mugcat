@@ -12,10 +12,10 @@
 {% block dynamic_wrapper %}
 <div class="home-wrapper">
 	<div class="home-wrapper_content">
-		<h1>{{ page.title }}</h1>
-		{{ page.content }}
+		<h1 class="animation-reveal-1">{{ page.title }}</h1>
+		<div class="animation-reveal-2">{{ page.content }}
 
-		<div class="home-links">
+		<div class="home-links animation-reveal-3">
 			{{ homelinks() }}
 		</div>
 	</div>
