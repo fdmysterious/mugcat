@@ -30,6 +30,7 @@ $color-v2-dark-grey:  #111014;
 $color-v2-ocean-blue: #244666;
 $color-v2-african-violet: #AA78A7;
 $color-v2-bluegrey: #A6C2CE;
+$color-v2-blueish: #0E9594;
 
 //////////////////////////////////////////
 // Main colors
@@ -50,7 +51,7 @@ $color-main                : lighten( $color-background-main, 20 );
 $color-link                : $color-wood;
 $color-link-hover          : lighten( $color-link, 20 );
 
-$color-nav-link            : $color-wood;
+$color-nav-link            : $color-sweet;
 
 $color-portfolio-figcaption: $color-wood;
 
