@@ -1,9 +1,0 @@
-=========================================
-450: Blocked by Windows Parental Controls
-=========================================
-:status: hidden
-:template: page_error
-:error_cat: internet-cat.jpg
-:slug: err/450
-
-Code défini par Microsoft. Cette erreur est produite lorsque les outils de contrôle parental de Windows sont activés et bloquent l’accès à la page.

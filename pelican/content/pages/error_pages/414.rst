@@ -1,9 +1,0 @@
-=========================
-414: Request-URI Too Long
-=========================
-:status: hidden
-:template: page_error
-:error_cat: business.jpg
-:slug: err/414
-
-URI trop longue.

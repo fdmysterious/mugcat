@@ -1,9 +1,0 @@
-====================
-411: Length Required
-====================
-:status: hidden
-:template: page_error
-:error_cat: internet-cat.jpg
-:slug: err/411
-
-La longueur de la requête n’a pas été précisée.

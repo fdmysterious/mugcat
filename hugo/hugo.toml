@@ -1,0 +1,22 @@
+baseURL = 'https://mugcat.fr/'
+languageCode = 'fr-fr'
+title = 'Mugcat'
+theme = "paper"
+
+sectionMenuPages="main"
+
+[menu]
+[[menu.main]]
+  name = 'About'
+  pageRef = '/about'
+  weight = 10
+
+[[menu.main]]
+  name = 'Informatique'
+  pageRef = '/posts/computery'
+  weight = 20
+
+[[menu.main]]
+  name    = 'Electronique'
+  pageRef = '/posts/electronics'
+  weight  = 30

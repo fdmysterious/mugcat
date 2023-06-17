@@ -1,9 +1,0 @@
-===========
-423: Locked
-===========
-:status: hidden
-:template: page_error
-:error_cat: keyboard_cat.jpg
-:slug: err/423
-
-WebDAV : L’opération ne peut avoir lieu car la ressource est verrouillée.

@@ -1,9 +1,0 @@
-====================================
-511: Network authentication required
-====================================
-:status: hidden
-:template: page_error
-:error_cat: cat_computer_1.jpg
-:slug: err/511
-
-RFC 658518 : Le client doit s'authentifier pour accéder au réseau. Utilisé par les portails captifs pour rediriger les clients vers la page d'authentification.

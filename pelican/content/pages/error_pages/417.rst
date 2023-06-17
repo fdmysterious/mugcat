@@ -1,9 +1,0 @@
-=======================
-417: Expectation failed
-=======================
-:status: hidden
-:template: page_error
-:error_cat: cat_computer_1.jpg
-:slug: err/417
-
-Comportement attendu et défini dans l’en-tête de la requête insatisfaisante.

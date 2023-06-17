@@ -1,9 +1,0 @@
-===================
-424: Method failure
-===================
-:status: hidden
-:template: page_error
-:error_cat: hipster_cat.jpg
-:slug: err/424
-
-WebDAV : Une méthode de la transaction a échoué.

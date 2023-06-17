@@ -1,9 +1,0 @@
-=============================
-413: Request Entity Too Large
-=============================
-:status: hidden
-:template: page_error
-:error_cat: internet-cat.jpg
-:slug: err/413
-
-Traitement abandonné dû à une requête trop importante.

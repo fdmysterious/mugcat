@@ -1,9 +1,0 @@
-===================
-406: Not Acceptable
-===================
-:status: hidden
-:template: page_error
-:error_cat: nyan.jpg
-:slug: err/406
-
-La ressource demandée n'est pas disponible dans un format qui respecterait les en-têtes « Accept » de la requête.

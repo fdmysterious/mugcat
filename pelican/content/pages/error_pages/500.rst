@@ -1,9 +1,0 @@
-==========================
-500: Internal Server Error
-==========================
-:status: hidden
-:template: page_error
-:error_cat: nyan.jpg
-:slug: err/500
-
-Erreur interne du serveur.

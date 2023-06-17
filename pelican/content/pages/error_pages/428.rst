@@ -1,9 +1,0 @@
-==========================
-428: Precondition Required
-==========================
-:status: hidden
-:template: page_error
-:error_cat: hipster_cat.jpg
-:slug: err/428
-
-RFC 658517 : La requête doit être conditionnelle.

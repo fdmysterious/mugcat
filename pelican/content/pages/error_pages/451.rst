@@ -1,9 +1,0 @@
-==================================
-451: Unavailable For Legal Reasons
-==================================
-:status: hidden
-:template: page_error
-:error_cat: mgs.jpg
-:slug: err/451
-
-La ressource demandée est inaccessible pour des raisons d'ordre légal.

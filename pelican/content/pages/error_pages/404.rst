@@ -1,9 +1,0 @@
-==============
-404: Not Found
-==============
-:status: hidden
-:template: page_error
-:error_cat: cosis.jpg
-:slug: err/404
-
-Ressource non trouvée.

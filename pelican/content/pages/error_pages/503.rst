@@ -1,9 +1,0 @@
-========================
-503: Service Unavailable
-========================
-:status: hidden
-:template: page_error
-:error_cat: keyboard_cat.jpg
-:slug: err/503
-
-Service temporairement indisponible ou en maintenance.

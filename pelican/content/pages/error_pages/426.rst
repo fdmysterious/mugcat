@@ -1,9 +1,0 @@
-=====================
-426: Upgrade Required
-=====================
-:status: hidden
-:template: page_error
-:error_cat: nyan.jpg
-:slug: err/426
-
-RFC 281716 : Le client devrait changer de protocole, par exemple au profit de TLS/1.0.

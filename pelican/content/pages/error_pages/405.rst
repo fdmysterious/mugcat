@@ -1,9 +1,0 @@
-=======================
-405: Method Not Allowed
-=======================
-:status: hidden
-:template: page_error
-:error_cat: cat_computer_1.jpg
-:slug: err/405
-
-Méthode de requête non autorisée.

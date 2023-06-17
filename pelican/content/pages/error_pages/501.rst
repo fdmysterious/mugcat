@@ -1,9 +1,0 @@
-====================
-501: Not Implemented
-====================
-:status: hidden
-:template: page_error
-:error_cat: keyboard_cat.jpg
-:slug: err/501
-
-Fonctionnalité réclamée non supportée par le serveur.

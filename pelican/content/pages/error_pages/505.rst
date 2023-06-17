@@ -1,9 +1,0 @@
-===============================
-505: HTTP Version not supported
-===============================
-:status: hidden
-:template: page_error
-:error_cat: mgs.jpg
-:slug: err/505
-
-Version HTTP non gérée par le serveur.

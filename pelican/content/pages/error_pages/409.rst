@@ -1,9 +1,0 @@
-=============
-409: Conflict
-=============
-:status: hidden
-:template: page_error
-:error_cat: mgs.jpg
-:slug: err/409
-
-La requête ne peut être traitée en l’état actuel.

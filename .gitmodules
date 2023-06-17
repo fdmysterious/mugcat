@@ -1,3 +1,6 @@
 [submodule "pelican/plugins"]
 	path = pelican/plugins
 	url = https://github.com/getpelican/pelican-plugins
+[submodule "hugo/themes/paper"]
+	path = hugo/themes/paper
+	url = https://github.com/nanxiaobei/hugo-paper.git

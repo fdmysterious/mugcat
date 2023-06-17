@@ -1,9 +1,0 @@
-=============================
-509: Bandwidth Limit Exceeded
-=============================
-:status: hidden
-:template: page_error
-:error_cat: hipster_cat.jpg
-:slug: err/509
-
-On non, je n'ai plus de bande passante :'(
