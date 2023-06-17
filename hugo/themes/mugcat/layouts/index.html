@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="home-wrapper">
+	<div class="home-wrapper_content">
+		<h1 class="animation-reveal-1">{{ .Title }}</h1>
+		<div class="animation-reveal-2">
+			{{ .Content }}
+		</div>
+		<div class="home-links animation-reveal-3">
+			{{ partial "nav-icons.html" (dict "menuID" "main" "page" .) }}
+		</div>
+	</div>
+</div>
+
+<script>
+	window.page_loaded = function() {
+		window.components.triangles.set_animate(true);
+		window.components.header.menu_hide();
+	}
+</script>
+	
+{{ end }}

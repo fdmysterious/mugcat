@@ -1,0 +1,29 @@
+{{- $page   := .page   }}
+{{- $menuID := .menuID }}
+
+{{- with index site.Menus $menuID }}
+	{{- partial "inline/menu/item.html" (dict "page" $page "menuEntries" .) }}
+{{- end }}
+
+{{- define "partials/inline/menu/item.html" }}
+	{{- $page := .page }}
+	{{- range .menuEntries }}
+		{{- $attrs := dict "href" .URL }}
+
+		<a class="nav-link"
+			{{- range $k, $v := $attrs }}
+				{{- with $v }}
+					{{- printf " %s=%q" $k $v | safeHTMLAttr }}
+				{{- end }}
+			{{- end }}
+		>
+			<!-- Todo add icon info -->
+			<i class="fa fa-{{.Params.Icon}}"></i>
+
+			<span class="subtitle">
+				{{ or (T .Identifier) .Name | safeHTML }}
+			</span>
+		</a>
+	{{- end }}
+
+{{- end }}

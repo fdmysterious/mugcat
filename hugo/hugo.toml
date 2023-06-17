@@ -8,16 +8,7 @@ sectionMenuPages="main"
 
 [menu]
 [[menu.main]]
-  name = 'About'
+  name    = 'A propos'
   pageRef = '/about'
-  weight = 10
-
-[[menu.main]]
-  name = 'Informatique'
-  pageRef = '/posts/computery'
-  weight = 20
-
-[[menu.main]]
-  name    = 'Electronique'
-  pageRef = '/posts/electronics'
-  weight  = 30
+  params  = {icon    = "user-o"}
+  weight  = 10
