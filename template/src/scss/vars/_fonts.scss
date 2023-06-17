@@ -6,9 +6,12 @@ $font-path : "/assets/fonts";
 //////////////////////////////////////////
 // Font family
 //////////////////////////////////////////
-$font-main    : "Fira Sans", "Noto Sans", "Open Sans", sans-serif;
+//$font-main    : "Fira Sans", "Noto Sans", "Open Sans", sans-serif;
 //$font-heading : "Quicksand", $font-main;
+$font-main: "Mukta", "Noto Sans", "Open Sans", sans-serif;
 $font-heading: "Assistant", $font-main;
+$font-heading: $font-main;
+$font-heading-weight: 700;
 
 //////////////////////////////////////////
 // Font sizes

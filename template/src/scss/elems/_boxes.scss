@@ -169,7 +169,7 @@ body
 
     color : $color-nav-link;
 
-	text-shadow: 2px 2px 0px darken($color-nav-link, 20);
+	//text-shadow: 2px 2px 0px darken($color-nav-link, 20);
 
     &:hover {
         color : lighten( $color-nav-link, 20 );
@@ -180,7 +180,7 @@ body
 
     &:active {
         color : rgba( 0,0,0,0 );
-        text-shadow : 0 0 2px lighten( $color-nav-link, 20 );
+        //text-shadow : 0 0 2px lighten( $color-nav-link, 20 );
     }
 
     & > i {
@@ -400,6 +400,8 @@ figure.full-width {
         transform : translate( -50%, -40% );
         // End of section //
 
+		letter-spacing: 0.6px;
+
         & > * {
             transition : opacity 200ms ease;
 
@@ -414,11 +416,11 @@ figure.full-width {
     h1 {
         //text-align : center;
 		text-align: left;
-        color : $color-wood;
+        color : $color-v3-orange;
         font-size : 4.5rem;
 		font-weight: bold;
 
-		text-shadow: 2px 2px 0px darken($color-wood, 30);
+		text-shadow: 2px 2px 0px darken($color-v3-orange, 30);
     }
 
     @media( max-width : $size-phablet ) {
