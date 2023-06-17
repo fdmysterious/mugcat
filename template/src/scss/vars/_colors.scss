@@ -32,6 +32,16 @@ $color-v2-african-violet: #AA78A7;
 $color-v2-bluegrey: #A6C2CE;
 $color-v2-blueish: #0E9594;
 
+$color-v3-dark: #050605;
+$color-v3-white: #fefdfd;
+$color-v3-orange: #f49624;
+$color-v3-red: #d84528;
+$color-v3-light_blue: #cad0d0;
+$color-v3-new_sweet: #ee4456;
+$color-v3-green: #0d8c45;
+$color-v3-wine: #d2ab9e;
+
+
 //////////////////////////////////////////
 // Main colors
 //////////////////////////////////////////
@@ -44,14 +54,14 @@ $color-v2-blueish: #0E9594;
 //$color-link               : #ba5e01;
 //$color-link-hover         : lighten( $color-link, 20 );
 
-$color-background-main     : $color-v2-dark-grey;
-$color-background-content  : $color-coffee;
+$color-background-main     : $color-v3-dark;
+$color-background-content  : $color-v3-white;
 $color-heading             : lighten( $color-background-main, 15 );
 $color-main                : lighten( $color-background-main, 20 );
-$color-link                : $color-wood;
+$color-link                : $color-v3-orange;
 $color-link-hover          : lighten( $color-link, 20 );
 
-$color-nav-link            : $color-sweet;
+$color-nav-link            : $color-v3-new_sweet;
 
 $color-portfolio-figcaption: $color-wood;
 

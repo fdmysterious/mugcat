@@ -1,22 +1,35 @@
+//@include create-font(
+//    "Fira Sans",
+//    "Fira Sans-Regular",
+//    "fira/FiraSans-Regular"
+//);
+//
+//@include create-font(
+//    "Fira Sans",
+//    "Fira Sans-Italic",
+//    "fira/FiraSans-Italic",
+//    normal,
+//    italic
+//);
+//
+//@include create-font(
+//    "Fira Sans",
+//    "Fira Sans-Bold",
+//    "fira/FiraSans-Bold",
+//    700
+//);
+
 @include create-font(
-    "Fira Sans",
-    "Fira Sans-Regular",
-    "fira/FiraSans-Regular"
+	"Mukta",
+	"Mukta-Regular",
+	"mukta/Mukta-Regular"
 );
 
 @include create-font(
-    "Fira Sans",
-    "Fira Sans-Italic",
-    "fira/FiraSans-Italic",
-    normal,
-    italic
-);
-
-@include create-font(
-    "Fira Sans",
-    "Fira Sans-Bold",
-    "fira/FiraSans-Bold",
-    700
+	"Mukta",
+	"Mukta-Bold",
+	"mukta/Mukta-Bold",
+	700
 );
 
 //////////////////////
