@@ -1,7 +1,8 @@
 baseURL = 'https://mugcat.fr/'
 languageCode = 'fr-fr'
 title = 'Mugcat'
-theme = "paper"
+theme = "mugcat"
+author="Florian Dupeyron"
 
 sectionMenuPages="main"
 

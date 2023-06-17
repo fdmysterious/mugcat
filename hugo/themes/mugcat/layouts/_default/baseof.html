@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+		<title>
+			{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ site.Title }}
+		</title>
+
+		<!-- Meta page info -->
+		{{ $site_author := or site.Author.name site.Params.name site.Title }}
+
+		{{ if eq .Kind "page" }}
+		<meta name="description" content="{{ .Summary }}"/>
+		<meta name="author"      content="{{ or .Params.author $site_author }}"/>
+		{{ else }}
+		<meta name="description" content="{{ site.Params.description }}"/>
+		<meta name="author"      content="{{ $site_author }}"/>
+		{{ end }}
+
+		<!-- Scripts and sheets -->
+		<link rel="preload stylesheet" as="style" href="/index.css"/>
+
+		<!-- Favicon -->
+		<!-- TODO -->
+
+		{{ hugo.Generator }}
+	</head>
+
+	<body>
+		<div class="main-background"><canvas></canvas></div>
+
+		<header class="main-header" role="banner">
+			<div class="main-header_logo">
+				<img src="/assets/img/logo.svg" alt="Mugcat"/>
+			</div>
+
+			<nav class="main-nav" role="navigation">
+				<main class="main-nav_content">
+					<a class="nav-link" href="#">
+						<i class="fa fa-cogs"></i>
+						<span class="subtitle">Hello world</span>
+					</a>
+				</main>
+			</nav>
+		</header>
+
+		<div class="dynamic-wrapper">
+			<main class="main-wrapper" role="main">
+				{{ block "main" . }}
+				{{ end }}
+			</main>
+
+			<footer class="main-footer" id="footer" role="footer">
+				<p><strong>2017-2023 Florian Dupeyron</strong></p>
+				<p>Code source disponible sur <a href="https://github.com/fdmysterious/mugcat">github</a>.</p>
+				<p>Code source sous licence GPLv3. Contenu multimédia sous licence CC-BY-NC v3.</p>
+			</footer>
+
+			<script>
+				window.page_loaded = function() {
+					window.components.triangles.set_animate(false);
+					window.components.header.menu_show();
+				}
+			</script>
+		</div>
+
+		<script src="/assets/lib/delaunay.js"></script>
+		<script src="/js/index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,7 @@
+name        = "Mugcat"
+license     = "MIT"
+description = "The official theme of the mugcat.fr website"
+
+[author]
+name     = "fdmysterious"
+homepage = "https://mugcat.fr"
