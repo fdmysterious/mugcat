@@ -1,7 +1,9 @@
 {{ define "main" }}
 	<main class="main-wrapper" role="main">
+		<a class="portfolio-prev-link" href="{{ .CurrentSection.Permalink}}">{{ .CurrentSection.Title }}</a>
+
 		<h1>{{ .Title }}</h1>
-		<p>{{ .Date }}</p>
+		<p><i class="fa fa-calendar"></i> {{ .Date | time.Format ":date_long" }}</p>
 
 		{{ .Content }}
 	</main>

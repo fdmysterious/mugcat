@@ -1,0 +1,35 @@
+{{ define "main" }}
+
+<!-- Tag title -->
+{{ if and .Title (eq .Type "tags") }}
+<h1>#{{ .Title }}</h1>
+{{ end }}
+
+<!-- Pages -->
+{{ $pages := union .RegularPages .Sections }}
+{{ if .IsHome }}
+{{ $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{ end }}
+
+<ul>
+<!-- Articles -->
+{{ $paginator := .Paginate $pages }}
+{{ range $index, $page := $paginator.Pages }}
+<li><a href="{{ .Permalink }}">{{ .Date | time.Format ":date_medium" }} - {{ .Title }}</a></li>	
+{{ end }}
+</ul>
+
+<!-- Paginator -->
+{{ if gt $paginator.TotalPages 1 }}
+<nav>
+	{{ if $paginator.HasPrev }}
+	<a href="{{$paginator.Prev.URL}}">← Prev.</a> <!-- TODO i18n -->
+	{{ end }}
+
+	{{ if $paginator.hasNext }}
+	<a href="{{$paginator.Prev.URL}}">Next. →</a> <!-- TODO i18n -->
+	{{ end }}
+</nav>
+{{ end }}
+
+{{ end }} <!-- End of main block -->

@@ -1,0 +1,29 @@
+{{ define "main" }}
+	<main class="main-wrapper" role="main">
+		<h1>{{ .Title }}</h1>
+
+		<nav class="portfolio-links">
+			{{ range .Pages }}
+			<figure>
+				<a href="{{ .Permalink }}">
+					<div class="img-wrapper">
+						{{ $cover := .Resources.GetMatch "cover.jpg" }}
+						{{ $thumb := $cover.Fill "256x256" }}
+						<img src="{{ $thumb.RelPermalink }}"/>
+					</div>
+					<figcaption>{{ .Date | time.Format ":date_medium" }} - {{ .Title }}</figcaption>
+				</a>
+			</figure>
+			{{ end }}
+		</nav>
+	</main>
+
+	{{ partial "footer.html" }}
+
+	<script>
+		window.page_loaded = function() {
+			window.components.triangles.set_animate(false);
+			window.components.header.menu_show();
+		}
+	</script>
+{{ end }}

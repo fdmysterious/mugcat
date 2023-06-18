@@ -12,3 +12,16 @@ sectionMenuPages="main"
   pageRef = '/about'
   params  = {icon    = "user-o"}
   weight  = 10
+
+[[menu.main]]
+  name    = "Posts"
+  pageRef = "/posts"
+  params  = {icon = "book" }
+  weight  = 20
+
+
+[[menu.main]]
+  name    = "Projets"
+  pageRef = "/projects"
+  params  = {icon = "microchip"}
+  weight  = 30
