@@ -2,11 +2,17 @@
 
 // Florian Dupeyron
 // February 2022
+// Updated 2023-06: Added background image
 
 #article {
 	.article-infos {
+		padding: 5px;
+		margin-left: 2em;
+
 		ul {
 			list-style-type: none;
+			margin-left: 0;
+			padding-left: 0;
 		}
 
 		li .fa {
@@ -19,4 +25,34 @@
 
 	}
 	*/
+
+	header {
+		background-size: cover;
+
+		position: relative;
+		margin: -2em;
+
+		margin-bottom: 2em;
+		padding: 2em;
+
+		border-radius: 5px 5px 3px 3px;
+		border-bottom: 10px solid $color-v3-orange;
+
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		h1, .article-infos {
+			background: $color-background-content;
+			padding: 2px;
+			box-shadow: 5px 5px 0px rgba(0,0,0,0.7);
+		}
+
+		.portfolio-prev-link {
+			background: transparentize($color-background-main, 0.3);
+			padding: 5px;
+			border-radius: 5px;
+			font-weight: bold;
+		}
+	}
 }
