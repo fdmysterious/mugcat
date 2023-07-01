@@ -351,12 +351,24 @@ figure.full-width {
             }
 
             & > figcaption {
-                margin-top  : .5em;
-                text-align  : center;
+				position       : relative;
+                width          : 256px;
+				height         : 2rem;
+				margin-top     : -2rem;
+				display        : flex;
+
+				align-items    : center;
+				justify-content: center;
+
+				background: transparentize(black, 0.4);
+				backdrop-filter: blur(10px);
                 color       : $color-portfolio-figcaption;
+				font-weight : bold;
+				text-decoration: none !important;
                 font-size   : 1.2em;
-                width       : 256px;
                 white-space : wrap;
+
+				border-radius: 5px;
             }
         }
     }
