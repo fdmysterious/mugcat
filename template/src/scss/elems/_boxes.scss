@@ -353,15 +353,19 @@ figure.full-width {
             & > figcaption {
 				position       : relative;
                 width          : 256px;
-				height         : 2rem;
-				margin-top     : -2rem;
+				height         : 70px;
+				margin-top     : -70px;
 				display        : flex;
+
+				padding-left   : 1rem;
+				padding-right  : 1rem;
+				box-sizing     : border-box;
 
 				align-items    : center;
 				justify-content: center;
 
 				background: transparentize(black, 0.4);
-				backdrop-filter: blur(10px);
+				backdrop-filter: blur(3px);
                 color       : $color-portfolio-figcaption;
 				font-weight : bold;
 				text-decoration: none !important;
@@ -369,6 +373,11 @@ figure.full-width {
                 white-space : wrap;
 
 				border-radius: 5px;
+				border-top: 2px solid $color-v3-orange;
+
+
+
+				
             }
         }
     }
