@@ -4,16 +4,16 @@
 
 		<nav class="portfolio-links">
 			{{ range .Pages }}
-			<figure>
-				<a href="{{ .Permalink }}">
-					<div class="img-wrapper">
-						{{ $cover := .Resources.GetMatch "cover.jpg" }}
-						{{ $thumb := $cover.Fill "256x256" }}
-						<img src="{{ $thumb.RelPermalink }}"/>
-					</div>
-					<figcaption>{{ .Date | time.Format ":date_medium" }} - {{ .Title }}</figcaption>
-				</a>
-			</figure>
+			<a href="{{ .Permalink }}">
+				<figure>
+						<div class="img-wrapper">
+							{{ $cover := .Resources.GetMatch "cover.jpg" }}
+							{{ $thumb := $cover.Fill "256x256" }}
+							<img src="{{ $thumb.RelPermalink }}"/>
+						</div>
+						<figcaption>{{ .Date | time.Format ":date_medium" }} - {{ .Title }}</figcaption>
+				</figure>
+			</a>
 			{{ end }}
 		</nav>
 	</main>

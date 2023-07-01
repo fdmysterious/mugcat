@@ -1,11 +1,20 @@
 {{ define "main" }}
 	<main class="main-wrapper" role="main">
-		<a class="portfolio-prev-link" href="{{ .CurrentSection.Permalink}}">{{ .CurrentSection.Title }}</a>
+		<section id="article">
+			<header style='background-image: url( {{ .Resources.GetMatch "cover.jpg" }} );'>
+				<a class="portfolio-prev-link" href="{{ .CurrentSection.Permalink}}">{{ .CurrentSection.Title }}</a>
+				<h1>{{ .Title }}</h1>
+				<div class="article-infos">
+					<ul>
+						<li><i class="fa fa-calendar"></i> {{ .Date | time.Format ":date_long" }}</li>
+					</ul>
+				</div>
+			</header>
 
-		<h1>{{ .Title }}</h1>
-		<p><i class="fa fa-calendar"></i> {{ .Date | time.Format ":date_long" }}</p>
-
-		{{ .Content }}
+			<div class="article-content">
+				{{ .Content }}
+			</div>
+		</section>
 	</main>
 
 	{{ partial "footer.html" }}
