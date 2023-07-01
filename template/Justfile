@@ -1,2 +1,5 @@
 serve:
 	node_modules/.bin/gulp serve
+
+build:
+	node_modules/.bin/gulp build
