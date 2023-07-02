@@ -1,27 +1,64 @@
-baseURL = 'https://mugcat.fr/'
-languageCode = 'fr-fr'
+baseURL = 'https://mugcat.fr'
 title = 'Mugcat'
 theme = "mugcat"
-author="Florian Dupeyron"
-
 sectionMenuPages="main"
 
-[menu]
-[[menu.main]]
-  name    = 'A propos'
-  pageRef = '/about'
-  params  = {icon    = "user-o"}
-  weight  = 10
+defaultContentLanguage="fr"
 
-[[menu.main]]
-  name    = "Posts"
-  pageRef = "/posts"
-  params  = {icon = "book" }
-  weight  = 20
+[markup.goldmark.renderer]
+ unsafe = true
+
+[languages]
+[languages.fr]
+
+	[languages.fr.author]
+	name="Florian Dupeyron"
+	intro="Ingénieur spécialisé dans le logiciel embarqué, mon ambition est de travailler sur des systèmes critiques et exigeants. Toujours à l'affût, je tente de faire preuve d'un engagement inébranlable pour repousser les limites de mon domaine d'expertise."
+
+	[languages.fr.menu]
+	[[languages.fr.menu.main]]
+	  name    = 'A propos'
+	  pageRef = '/about'
+	  params  = {icon    = "user-o"}
+	  weight  = 10
+
+	[[languages.fr.menu.main]]
+	  name    = "Posts"
+	  pageRef = "/posts"
+	  params  = {icon = "book" }
+	  weight  = 20
 
 
-[[menu.main]]
-  name    = "Projets"
-  pageRef = "/projects"
-  params  = {icon = "microchip"}
-  weight  = 30
+	[[languages.fr.menu.main]]
+	  name    = "Projets"
+	  pageRef = "/projects"
+	  params  = {icon = "microchip"}
+	  weight  = 30
+
+
+[languages.en]
+
+	[languages.en.author]
+	name="Florian Dupeyron"
+	intro="As an engineer specialized in embedded software, my ambition is to work on critical and demanding systems. Always vigilant, I strive to demonstrate unwavering commitment in pushing the boundaries of my field of expertise."
+
+	[[languages.en.menu.main]]
+	  name    = 'About'
+	  pageRef = '/en/about'
+	  params  = {icon    = "user-o"}
+	  weight  = 10
+
+	[[languages.en.menu.main]]
+	  name    = "Posts"
+	  pageRef = "/en/posts"
+	  params  = {icon = "book" }
+	  weight  = 20
+
+
+	[[languages.en.menu.main]]
+	  name    = "Projects"
+	  pageRef = "/en/projects"
+	  params  = {icon = "microchip"}
+	  weight  = 30
+
+

@@ -11,7 +11,7 @@
 							{{ $thumb := $cover.Fill "256x256" }}
 							<img src="{{ $thumb.RelPermalink }}"/>
 						</div>
-						<figcaption>{{ .Date | time.Format ":date_medium" }} - {{ .Title }}</figcaption>
+						<figcaption>{{ .Title }}</figcaption>
 				</figure>
 			</a>
 			{{ end }}

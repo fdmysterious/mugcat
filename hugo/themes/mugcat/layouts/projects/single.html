@@ -1,8 +1,7 @@
 {{ define "main" }}
 	<main class="main-wrapper" role="main">
 		<section id="article">
-			{{ $cover := .Resources.GetMatch "cover.jpg" }}
-			<header style='background-image: url( {{ $cover.Permalink }} );'>
+			<header style='background-image: url( {{ .Resources.GetMatch "cover.jpg" }} );'>
 				<a class="portfolio-prev-link" href="{{ .CurrentSection.Permalink}}">{{ .CurrentSection.Title }}</a>
 				<h1>{{ .Title }}</h1>
 				<div class="article-infos">
@@ -14,10 +13,10 @@
 
 			<div class="article-content">
 				{{ .Content }}
+				{{ partial "author-info.html" }}
 			</div>
-
-			{{ partial "author-info.html" }}
 		</section>
+
 	</main>
 
 	{{ partial "footer.html" }}
