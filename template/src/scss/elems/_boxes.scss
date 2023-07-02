@@ -481,3 +481,59 @@ figure.full-width {
         margin-left: 0;
     }
 }
+
+//////////////////////////////////////////
+// Author infos
+//////////////////////////////////////////
+.author-info {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+
+	border-top: 1px dashed $color-v3-orange;
+	padding-top: 1rem;
+
+	@media(max-width: $size-mobile) {
+		flex-direction: column;
+
+		.author-photo {
+			margin-bottom: 0.5rem;
+		}
+	}
+
+	.author-photo {
+		position: relative;
+		min-width: 90px;
+		min-height: 90px;
+		max-width: 90px;
+		max-height: 90px;
+		width: 90px;
+		height: 90px;
+		margin-right: 1rem;
+
+		border-radius: 200px;
+		overflow: hidden;
+		border: 3px solid $color-v3-new_sweet;
+		box-sizing: border-box;
+
+		img {
+			position: relative;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+
+	.author-infos {
+		position: relative;
+
+		.author-name {
+			font-size: 1.5rem;
+			font-weight: bold;
+			margin-bottom: 0.3rem;
+		}
+	}
+}
