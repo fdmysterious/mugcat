@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
 		<title>
-			{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ site.Title }}
+			{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ site.Title }}{{ if .IsHome}} - Just Meow! {{end}}
 		</title>
 
 		<!-- Meta page info -->
