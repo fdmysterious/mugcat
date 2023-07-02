@@ -517,7 +517,7 @@ figure.full-width {
 
 		border-radius: 200px;
 		overflow: hidden;
-		border: 3px solid $color-v3-new_sweet;
+		border: 3px solid $color-v3-light_blue;
 		box-sizing: border-box;
 
 		img {
@@ -535,5 +535,16 @@ figure.full-width {
 			font-weight: bold;
 			margin-bottom: 0.3rem;
 		}
+	}
+
+	p {
+		&.author-cta {
+			&:before {
+				content:"👉";
+				margin-right: 0.4rem;
+			}
+		}
+
+		margin-bottom: 0.2rem;
 	}
 }
