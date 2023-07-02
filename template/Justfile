@@ -3,3 +3,6 @@ serve:
 
 build:
 	node_modules/.bin/gulp build
+
+copy_css:
+	cp build/index.css ../hugo/themes/mugcat/static/index.css
