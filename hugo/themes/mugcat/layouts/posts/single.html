@@ -1,7 +1,7 @@
 {{ define "main" }}
 	<main class="main-wrapper" role="main">
 		<section id="article">
-			{{ $cover := .Resources.GetMatch "cover.jpg" }}
+			{{ $cover := .Resources.GetMatch "cover.*" }}
 			<header style='background-image: url( {{ $cover.Permalink }} );'>
 				<a class="portfolio-prev-link" href="{{ .CurrentSection.Permalink}}">{{ .CurrentSection.Title }}</a>
 				<h1>{{ .Title }}</h1>

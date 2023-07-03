@@ -4,9 +4,13 @@ theme = "mugcat"
 sectionMenuPages="main"
 
 defaultContentLanguage="fr"
+defaultContentLanguageInSubdir=true
 
 [markup.goldmark.renderer]
  unsafe = true
+
+[minify]
+minifyOutput = true
 
 [languages]
 [languages.fr]
@@ -44,20 +48,20 @@ defaultContentLanguage="fr"
 
 	[[languages.en.menu.main]]
 	  name    = 'About'
-	  pageRef = '/en/about'
+	  pageRef = '/about'
 	  params  = {icon    = "user-o"}
 	  weight  = 10
 
 	[[languages.en.menu.main]]
 	  name    = "Posts"
-	  pageRef = "/en/posts"
+	  pageRef = "/posts"
 	  params  = {icon = "book" }
 	  weight  = 20
 
 
 	[[languages.en.menu.main]]
 	  name    = "Projects"
-	  pageRef = "/en/projects"
+	  pageRef = "/projects"
 	  params  = {icon = "microchip"}
 	  weight  = 30
 

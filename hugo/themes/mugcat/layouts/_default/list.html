@@ -7,7 +7,7 @@
 			<a href="{{ .Permalink }}">
 				<figure>
 						<div class="img-wrapper">
-							{{ $cover := .Resources.GetMatch "cover.jpg" }}
+							{{ $cover := .Resources.GetMatch "cover.*" }}
 							{{ $thumb := $cover.Fill "256x256" }}
 							<img src="{{ $thumb.RelPermalink }}"/>
 						</div>

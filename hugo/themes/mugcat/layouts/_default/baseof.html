@@ -10,15 +10,12 @@
 		</title>
 
 		<!-- Meta page info -->
-		{{ $site_author := or site.Author.name site.Params.name site.Title }}
-
-		{{ if eq .Kind "page" }}
 		<meta name="description" content="{{ .Summary }}"/>
-		<meta name="author"      content="{{ or .Params.author $site_author }}"/>
-		{{ else }}
-		<meta name="description" content="{{ site.Params.description }}"/>
-		<meta name="author"      content="{{ $site_author }}"/>
-		{{ end }}
+		<meta name="author"      content="{{ or .Params.author site.Author.name }}"/>
+
+		{{ template "_internal/opengraph.html" . }}
+
+		{{ template "_internal/twitter_cards.html" . }}
 
 		<!-- Scripts and sheets -->
 		<link rel="preload stylesheet" as="style" href="/index.css"/>

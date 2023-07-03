@@ -84,3 +84,16 @@ ul,ol {
     }
 
 }
+
+figure {
+	position: relative;
+
+	img {
+		position: relative;
+		max-width: 100%;
+	}
+
+	figcaption {
+		text-align: center;
+	}
+}

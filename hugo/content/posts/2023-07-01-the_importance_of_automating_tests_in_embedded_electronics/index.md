@@ -4,8 +4,6 @@ date: 2023-07-01T14:42:10+02:00
 draft: true
 ---
 
-# Introduction
-
 Embedded electronics play a crucial role in various industries, from automotive
 and aerospace to consumer electronics and medical devices. With the increasing
 complexity of embedded systems, ensuring their reliability, functionality, and
