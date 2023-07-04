@@ -1,2 +1,8 @@
-[author_intro]
-other = "Ingénieur spécialisé dans le logiciel embarqué, mon ambition est de travailler sur des systèmes critiques et exigeants. Toujours à l'affût, je tente de faire preuve d'un engagement inébranlable pour repousser les limites de mon domaine d'expertise."
+[footer_source]
+other = "Code source disponible sur <a target='_blank' href='https://github.com/fdmysterious/mugcat'>Github</a>."
+
+[footer_license]
+other = "Code source sous licence GPLv3. Contenu multimédia sous licence CC-BY-NC v3."
+
+[author_cta]
+other = "Vous pouvez en savoir plus sur la <a href='/fr/about'>page dédiée</a>."

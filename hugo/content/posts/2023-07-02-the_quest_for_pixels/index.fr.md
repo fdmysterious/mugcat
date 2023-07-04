@@ -3,6 +3,7 @@ title: La quête des pixels
 date: 2023-07-02T14:20:38+02:00
 draft: true
 cover_source: https://unsplash.com/fr/photos/deb2EnbWPr8
+slug: "2023-07-02-la_quete_des_pixels"
 ---
 
 Je suis un maniaque des pixels. Même si nos écrans sont aujourd'hui suffisamment grands et denses pour afficher suffisamment d'informations,
