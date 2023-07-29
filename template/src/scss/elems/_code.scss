@@ -1,0 +1,29 @@
+.highlight {
+	margin-bottom: 1rem;
+	margin-top:   -1rem;
+}
+
+// Override default hugo style
+code, kbd, samp {
+	font-family: $font-code;
+	font-size: .9rem;
+}
+
+// Override some display stuff to fix height misalignment,
+// see https://discourse.gohugo.io/t/height-mismatch-of-highlighted-line-number-in-syntax-highlighting/42304/27?page=2
+.chroma .lntable .lnt,
+.chroma .lntable .hl {
+	display: flex;
+}
+
+.chroma .lntable .lntd + .lntd  {
+	width: 100%;
+}
+
+.chroma {
+	overflow-x: auto;
+	margin: 0;
+	padding-top: .3rem;
+	padding-bottom: .3rem;
+	border-radius: 8px;
+}

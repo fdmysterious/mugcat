@@ -51,3 +51,27 @@
 	"Assistant Bold",
 	"assistant/Assistant-Bold"
 );
+
+//////////////////////////////////////
+
+@include create-font(
+	"Hack",
+	"Hack-Regular",
+	"hack/hack-regular",
+	normal
+);
+
+@include create-font(
+	"Hack",
+	"Hack-Bold",
+	"hack/hack-bold",
+	700
+);
+
+@include create-font(
+	"Hack",
+	"Hack-Italic",
+	"hack/hack-italic",
+	normal,
+	italic
+);
