@@ -9,6 +9,11 @@ defaultContentLanguageInSubdir=true
 [markup.goldmark.renderer]
  unsafe = true
 
+[markup.highlight]
+linenos=true
+noClasses=false
+
+
 [minify]
 minifyOutput = true
 
@@ -64,5 +69,3 @@ minifyOutput = true
 	  pageRef = "/projects"
 	  params  = {icon = "microchip"}
 	  weight  = 30
-
-

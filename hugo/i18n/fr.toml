@@ -6,3 +6,6 @@ other = "Code source sous licence GPLv3. Contenu multimédia sous licence CC-BY-
 
 [author_cta]
 other = "Vous pouvez en savoir plus sur la <a href='/fr/about'>page dédiée</a>."
+
+[project_links]
+other = "Retrouver ce projet sur :"
