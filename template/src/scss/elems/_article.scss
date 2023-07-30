@@ -3,6 +3,7 @@
 // Florian Dupeyron
 // February 2022
 // Updated 2023-06: Added background image
+// Updated 2023-07: Added article links section
 
 #article {
 	.article-infos {
@@ -58,5 +59,24 @@
 
 	figure {
 		text-align: center;
+	}
+}
+
+.article-links-title {
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+.article-links-nav {
+	list-style-type: none;
+	padding-top: .5rem;
+	padding-bottom: .8rem;
+	margin-bottom: .8rem;
+	border-bottom: 1px dashed $color-v3-orange;
+
+	display: flex;
+
+	.article-link {
+		margin-left: 1rem;
 	}
 }

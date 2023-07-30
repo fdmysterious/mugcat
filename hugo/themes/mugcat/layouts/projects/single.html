@@ -1,5 +1,4 @@
-{{ define "main" }}
-	<main class="main-wrapper" role="main">
+{{ define "main" }} <main class="main-wrapper" role="main">
 		<section id="article">
 			{{ $cover := .Resources.GetMatch "cover.*" }}
 			<header style='background-image: url( {{ $cover.Permalink }} );'>
@@ -13,6 +12,13 @@
 			</header>
 
 			<div class="article-content">
+				<div class="article-links-title">{{ i18n "project_links" }}</div>
+				<nav class="article-links-nav">
+					{{ if (isset .Params "github_link") }}
+					<div class="article-link"><i class="fa fa-github"></i>&nbsp;<a target="_blank" href="{{ .Params.github_link }}">Github</a></div>
+					{{ end }}
+				</nav>
+
 				{{ .Content }}
 				{{ partial "author-info.html" }}
 			</div>
