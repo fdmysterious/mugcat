@@ -2,6 +2,7 @@
 title: "UMX Frankenstein"
 date: 2020-02-26T10:00:00+00:00
 draft: true
+cover_source: https://unsplash.com/fr/photos/QQ6PWLVvPHQ
 ---
 
 # Vidéo
