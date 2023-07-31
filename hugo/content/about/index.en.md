@@ -21,88 +21,91 @@ and since September 2022, I have been learning to play the organ.
 
 **09/2021 - ?**
 
-Ma mission consiste à intervenir pour des clients grands comptes,
-au sein du développement et de la maintenance de logiciels embarqués
-complexes.
+My mission is to work with major clients in the development and maintenance of
+complex embedded software on various embedded targets.
 
-Depuis septembre 2022, j'ai été promu au bureau d'étude du centre d'ile-de-France.
-Ce nouveau poste m'amène, en plus de répondre aux besoins des clients, à développer
-mon expertise, afin d'encadrer des ingénieurs sur divers projets, ainsi
-qu'à améliorer les outils techniques utilisés par l'entreprise.
+Since September 2022, I have been promoted to the
+design office of the of the Île-de-France center. This new position not only involves
+meeting client needs but also developing my expertise to supervise engineers on
+various projects and improving the technical tools used by the company.
 
-### Compétences développées :
 
-- *Développement bare-metal* : développement C bare-metal sur cibles diverses (STM32, MC56F83, ...) ;
-- *Encapsulation des toolchain* : Effort d'intégration des toolchain sur suite CMake + Docker, afin
-  d'encourager par exemple l'utilisation de pipelines pour adopter des
-  pratiques CI/CD
-- *Création de bancs de test automatiques*: Création de bancs de test automatiques sous linux 
-  pour validation du matériel, avec un effort mis sur l'automatisation des tests tout en
-  adoptant un formalisme de spécification simple (Gherkin). Je contribue également à cet effet
-  au projet [Panduza](https://github.com/panduza) de manière occasionnelle.
+### Acquired skills:
+
+- *Bare-metal development*:  Bare-metal development on various targets (STM32, MC56F83, ...) ;
+- *Toolchain setup*: Initiative to integrate toolchains on the CMake + Docker
+  suite, aiming to encourage, for example, the use of pipelines to adopt CI/CD
+  practices.
+- *Automated test benches design*: design of automated test benches under linux to validate
+  ongoing developments, putting effort on automating tests using simple specification formalisms
+  like [Gherkin](https://cucumber.io/docs/gherkin/) or [Robot framework](https://robotframework.org/).
+  I occasionally contribute to the [Panduza](https://github.com/panduza) project to this end.
 - *Capitalisation technique*: Rédaction de contenu technique public et privé sur le wiki interne de l'entreprise au niveau national, création de dépôts (github)
   réutilisables.
+- *Technical expertise*: Writing of public and private technical content on the company's internal wiki at national level, creation of reusable repositories (github).
 
-## Stage : Conception d'un driver linux PCIe *endpoint* - ELSYS Design
+## Internship: Conception of a PCIe *endpoint* driver for linux - ELSYS Design
 
 **03/2021 - 09/2021**
 
-Ce stage a consisté à développer, sur une carte PCIe implémentant un générateur
-de fonctions 1 Hz - 100 MHz, à partir d'un MPSoC Zynq de chez Xilinx, les drivers
-PCIe *endpoint* (côté carte) et PCIe *host* (côté PC hôte), afin d'assurer le pilotage
-de la carte. En complément, une interface graphique sur serveur web assure le pilotage de la carte.
-
-### Compétences développées :
-
-- *Développement driver linux* : en C sur cible embarquée sous environnement Xilinx (Vitis) ;
-- *Intégration* : Intégration dans Yocto / Petalinux, encapsulé dans un conteneur Docker ;
-- *Méthodologie Agile + Cycle en V* : Livraisons régulières et versionnées via git, points réguliers avec l'équipe logicielle pour présenter l'état d'avancement.
+This internship involved developing the drivers for a PCIe card implementing a 1 Hz - 100 MHz function generator,
+based on a Xilinx MPSoC Zynq. Both the PCIe *endpoint* (board side), and PCIe *host* (host PC side) drivers have been
+designed and developed, in order to drive the board. In addition, a web based graphical interfaces
+controlled the overall system.
 
 
+### Developed skills:
 
-## Développement de logiciels embarqués - HyVibe
+- *Linux driver development*: C on embedded target, under Xilinx environment (Vitis);
+- *Integration* : Yocto / Petalinux integration, encapsulated in a Docker container;
+- *Agile and V cycle method*: Regular deliveries versionned under git, regular meetings with the software dev. team to present the progress.
+
+
+## Embedded software developement - HyVibe
 
 **10/2018 - 03/2021**
 
-Travail, en tant que microentrepreneur, lors du développement du produit phare d'[HyVibe](https://hyvibe.audio), le
-module H1 utilisé sur les [guitares HyVibe](https://hyvibeguitar.com).
+Worked as a freelancer during the development of the flagship product of [HyVibe](https://hyvibe.audio),
+the H1 module used in [HyVibe guitars](https://hyvibeguitar.com).
 
-- Conception et développement (logiciel et matériel) du banc de test industriel
-  utilisé lors de la fabrication des produits ;
-- Test et intégration de différents drivers lors des phases de prototypage de la version
-  industrielle du produit.
-- Développement embarqué sur stm32h7 ;
-- Conception et prototypage de PCB pour usage interne en phase de R&D.
+- Engaged in the conception and development of an industrial-grade test bench,
+  encompassing both software and hardware components, tailored for use during the manufacturing
+  process of the products.
+- Conducted comprehensive testing and seamless integration of diverse drivers in the course of
+  prototyping the product's industrial version.
+- Undertook proficient embedded systems development, focusing on stm32h7 microcontroller.
+- Demonstrated expertise in the design and rapid prototyping of PCBs, exclusively utiliszed for
+  internal purposes during the R&D phase.
 
-# Diplômes 
+# Diplomas
 
-## DU "Etudiant Entrepreneur" (D2E) - CELSA Sorbonne Université
-
-**09/2021**
-
-## Master Informatique, Mention SESI : Systèmes Électroniques et Systèmes Informatiques - Sorbonne Université
+## DU "Etudiant Entrepreneur" (D2E) - CELSA Sorbonne University
 
 **09/2021**
 
-### Compétences développées :
+## MSc in computer science, specialization in Microelectronics and Embedded Systems - Sorbonne University
 
-- Architecture des processeurs (CPU, GPU, ManyCore) ;
-- Conception de circuits intégrés ;
-- Programmation embarquée ;
-- Conception FPGA.
+**09/2021**
 
-## Licence Electronique, Energie électrique et Automatique - Sorbonne Université
+### Developed skills:
+
+- Processor's core architecture (CPU, GPU, ManyCore);
+- IC Design;
+- Embedded systems programing;
+- FPGA programming.
+
+## BSc in electronics - Sorbonne University
 
 **06/2019**
 
-*Mention bien*
+*With honours*
 
 
-## Double licence Sciences & Musicologie - Sorbonne Université
+## Double BSc in Mechanics and Musicology - Sorbonne University
 
 **06/2018**
 
-*Mention assez bien*
+*With distinction*
 
 
 # Contact

@@ -6,7 +6,7 @@ draft: true
 
 Je m'appelle Florian Dupeyron. J'ai actuellement 26 ans,
 et travalile en tant qu'ingénieur en logiciels embarqués au sein du
-bureau d'études parision de [ELSYS Design](https://elsys-design.com)
+bureau d'études parisien de [ELSYS Design](https://elsys-design.com)
 
 Passionné d'informatique et d'électronique, il me tient à coeur d'intervenir
 à l'interface entre le monde physique et numérique sur des projets exigeants,
