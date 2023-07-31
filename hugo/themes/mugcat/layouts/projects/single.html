@@ -16,6 +16,8 @@
 				<nav class="article-links-nav">
 					{{ if (isset .Params "github_link") }}
 					<div class="article-link"><i class="fa fa-github"></i>&nbsp;<a target="_blank" href="{{ .Params.github_link }}">Github</a></div>
+					{{ else }}
+					<div class="article-link"><i class="fa fa-hourglass-half"></i>&nbsp;<span>{{i18n "project_links_soon"}}</span></div>
 					{{ end }}
 				</nav>
 

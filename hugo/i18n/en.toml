@@ -9,3 +9,6 @@ other = "Discover more on the <a href='/en/about'>dedicated page</a>."
 
 [project_links]
 other = "Find this project on:"
+
+[project_links_soon]
+other = "Available soon!"

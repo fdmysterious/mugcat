@@ -9,3 +9,6 @@ other = "Vous pouvez en savoir plus sur la <a href='/fr/about'>page dédiée</a>
 
 [project_links]
 other = "Retrouver ce projet sur :"
+
+[project_links_soon]
+other = "Bientôt !"
