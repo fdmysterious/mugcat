@@ -185,3 +185,10 @@ Pour définir un objet _from scratch_, il est possible de dériver la classe
 - `up(self)` : implémente comment l'objet est activé sur la plateforme linux ;
 - `down(self)` : implémente comment l'objet est désactivé sur la plateforme linux.
 - `export_graphviz(self, dot)` : implémente comment l'objet est représenté sur un diagramme graphviz.
+
+# Roadmap
+
+Voici, en vrac, quelques fonctionnalités prévues pour le futur :
+
+- [ ] Possibilité d'intégrer facilement un logiciel tiers, par exemple un serveur tftp, notamment via l'utilisation des `namespace` d'iproute;
+- [ ] De la même manière, possibilité de se brancher sur des conteneurs et réseau docker.

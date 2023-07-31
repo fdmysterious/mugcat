@@ -184,3 +184,10 @@ To define a network object from scratch, you can derive the `PyxNetObject` class
 - `up(self)`: implements how the object is bring up on the the linux platform;
 - `down(self)`: implements how the object is bring down on the linux platform;
 - `export_graphviz(self,dot)`: implements how the object is represented on a graphviz diagram.
+
+# Roadmap
+
+Here are some planned features:
+
+- [ ] Possibility of easily integrating third-party software, such as a tftp server, using iproute's `namespace`;
+- [ ] Similarly, possibility to connect to docker containers and networks.
