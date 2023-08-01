@@ -5,12 +5,12 @@ draft: true
 cover_source: https://unsplash.com/fr/photos/QQ6PWLVvPHQ
 ---
 
-# Vidéo
+# Video
 
 <iframe src="https://medias.ircam.fr/embed/media/xe73b89" allowfullscreen="" width="480" height="360" frameborder="0"></iframe>
 
 
-# Présentation
+# Presentation
 
 This presentation summarizes, in a few minutes, the `UMX Frankenstein` project
 on which I have been working whenever I have some free time. The goal is to
