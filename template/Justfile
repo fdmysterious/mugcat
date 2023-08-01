@@ -6,3 +6,9 @@ build:
 
 copy_css:
 	cp build/index.css ../hugo/themes/mugcat/static/index.css
+
+copy_assets:
+	cp -r build/assets ../hugo/themes/mugcat/static/
+
+copy_script:
+	cp -r build/js	../hugo/themes/mugcat/static/

@@ -26,7 +26,8 @@ export let scripts_wrapper : HTMLElement = null;
 
 declare global {
     interface Window {
-        page_loaded : () => void
+        page_loaded : () => void,
+		add_comments: () => void,
     }
 }
 
@@ -84,6 +85,7 @@ export function load( url : string )
 			}
 
             if( window.page_loaded ) window.page_loaded();
+			if( window.add_comments) window.add_comments();
         }
 
         else { 
@@ -112,7 +114,8 @@ export function init() : void
 
     // Firstly, ajaxify all body
     ajaxify( document.body );
-    if(window.page_loaded) window.page_loaded();
+    if(window.page_loaded ) window.page_loaded();
+	if(window.add_comments) window.add_comments();
 }
 
 export function ajaxify( blck : HTMLElement )
