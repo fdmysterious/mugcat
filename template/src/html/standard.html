@@ -71,6 +71,41 @@
 				  height: 80px;
 				}
 				</code></pre>
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="display:flex"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">"__main__"</span>:
+</span></span><span style="display:flex"><span>  logging<span style="color:#f92672">.</span>basicConfig(level<span style="color:#f92672">=</span>logging<span style="color:#f92672">.</span>INFO)
+</span></span><span style="display:flex"><span>
+</span></span><span style="display:flex"><span>  <span style="color:#75715e"># First, declare a topology object. This object will holds all objects declaration,</span>
+</span></span><span style="display:flex"><span>  <span style="color:#75715e"># as well as links between these objects.</span>
+</span></span><span style="display:flex"><span>  tt <span style="color:#f92672">=</span> Topology(name<span style="color:#f92672">=</span><span style="color:#e6db74">"Basic topology"</span>)
+</span></span><span style="display:flex"><span>
+</span></span><span style="display:flex"><span>  <span style="color:#75715e"># Secondly, we declare the objects we will have in our topology.</span>
+</span></span><span style="display:flex"><span>  s1 <span style="color:#f92672">=</span> tt<span style="color:#f92672">.</span>register(MyCustomSwitch(<span style="color:#e6db74">"s1"</span>, mac_addr<span style="color:#f92672">=</span><span style="color:#e6db74">"02:01:02:00:00:01"</span>, ip_addr<span style="color:#f92672">=</span><span style="color:#e6db74">"10.0.0.1/24"</span>), group<span style="color:#f92672">=</span><span style="color:#e6db74">"group1"</span>)
+</span></span><span style="display:flex"><span>  s2 <span style="color:#f92672">=</span> tt<span style="color:#f92672">.</span>register(MyCustomSwitch(<span style="color:#e6db74">"s2"</span>, mac_addr<span style="color:#f92672">=</span><span style="color:#e6db74">"02:01:02:00:00:02"</span>, ip_addr<span style="color:#f92672">=</span><span style="color:#e6db74">"10.0.0.2/24"</span>), group<span style="color:#f92672">=</span><span style="color:#e6db74">"group1"</span>)
+</span></span><span style="display:flex"><span>  s3 <span style="color:#f92672">=</span> tt<span style="color:#f92672">.</span>register(MyCustomSwitch(<span style="color:#e6db74">"s3"</span>, mac_addr<span style="color:#f92672">=</span><span style="color:#e6db74">"02:01:02:00:00:03"</span>, ip_addr<span style="color:#f92672">=</span><span style="color:#e6db74">"10.0.0.3/24"</span>), group<span style="color:#f92672">=</span><span style="color:#e6db74">"group2"</span>)
+</span></span><span style="display:flex"><span>  s4 <span style="color:#f92672">=</span> tt<span style="color:#f92672">.</span>register(MyCustomSwitch(<span style="color:#e6db74">"s4"</span>, mac_addr<span style="color:#f92672">=</span><span style="color:#e6db74">"02:01:02:00:00:04"</span>, ip_addr<span style="color:#f92672">=</span><span style="color:#e6db74">"10.0.0.4/24"</span>), group<span style="color:#f92672">=</span><span style="color:#e6db74">"group2"</span>)
+</span></span><span style="display:flex"><span>
+</span></span><span style="display:flex"><span>
+</span></span><span style="display:flex"><span>  <span style="color:#75715e"># Then, we connect these objects together</span>
+</span></span><span style="display:flex"><span>  tt<span style="color:#f92672">.</span>connect(s1<span style="color:#f92672">.</span>p0, s3<span style="color:#f92672">.</span>p0)
+</span></span><span style="display:flex"><span>  tt<span style="color:#f92672">.</span>connect(s1<span style="color:#f92672">.</span>p1, s4<span style="color:#f92672">.</span>p0)
+</span></span><span style="display:flex"><span>  tt<span style="color:#f92672">.</span>connect(s2<span style="color:#f92672">.</span>p0, s3<span style="color:#f92672">.</span>p1)
+</span></span><span style="display:flex"><span>  tt<span style="color:#f92672">.</span>connect(s2<span style="color:#f92672">.</span>p1, s4<span style="color:#f92672">.</span>p1)
+</span></span><span style="display:flex"><span>
+</span></span><span style="display:flex"><span>  <span style="color:#75715e"># Then, we can export our graph</span>
+</span></span><span style="display:flex"><span>  dot <span style="color:#f92672">=</span> tt<span style="color:#f92672">.</span>export_graphviz()
+</span></span><span style="display:flex"><span>  dot<span style="color:#f92672">.</span>render(<span style="color:#e6db74">"output_graph"</span>)
+</span></span><span style="display:flex"><span>
+</span></span><span style="display:flex"><span>  <span style="color:#75715e"># Now, onto instanciation of our topology!</span>
+</span></span><span style="display:flex"><span>  cleanup_all()    <span style="color:#75715e"># Precaution</span>
+</span></span><span style="display:flex"><span>  tt<span style="color:#f92672">.</span>instanciate() <span style="color:#75715e"># Topology instanciation on host platform</span>
+</span></span><span style="display:flex"><span>
+</span></span><span style="display:flex"><span>  <span style="color:#75715e"># Up objects</span>
+</span></span><span style="display:flex"><span>  s1<span style="color:#f92672">.</span>up()
+</span></span><span style="display:flex"><span>  s2<span style="color:#f92672">.</span>up()
+</span></span><span style="display:flex"><span>  s3<span style="color:#f92672">.</span>up()
+</span></span><span style="display:flex"><span>  s4<span style="color:#f92672">.</span>up()
+</span></span></code></pre></div>
 			</main>
 
 			<footer class="main-footer" id="footer" role="footer">
