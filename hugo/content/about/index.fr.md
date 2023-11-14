@@ -5,12 +5,12 @@ draft: true
 ---
 
 Je m'appelle Florian Dupeyron. J'ai actuellement 26 ans,
-et travalile en tant qu'ingénieur en logiciels embarqués au sein du
+et travaille en tant qu'ingénieur en logiciels embarqués au sein du
 bureau d'études parisien de [ELSYS Design](https://elsys-design.com)
 
 Passionné d'informatique et d'électronique, il me tient à coeur d'intervenir
 à l'interface entre le monde physique et numérique sur des projets exigeants,
-tout en améliorant continuellement mes techniques pour parfaire mon artisannat.
+tout en améliorant continuellement mes techniques pour parfaire mon artisanat.
 
 Musicien, je pratique le piano depuis mes 5 ans, et, depuis septembre 2022, l'orgue.
 
@@ -64,7 +64,7 @@ de la carte. En complément, une interface graphique sur serveur web assure le p
 
 **10/2018 - 03/2021**
 
-Travail, en tant que microentrepreneur, lors du développement du produit phare d'[HyVibe](https://hyvibe.audio), le
+Travail, en tant que micro-entrepreneur, lors du développement du produit phare d'[HyVibe](https://hyvibe.audio), le
 module H1 utilisé sur les [guitares HyVibe](https://hyvibeguitar.com).
 
 - Conception et développement (logiciel et matériel) du banc de test industriel
@@ -76,7 +76,7 @@ module H1 utilisé sur les [guitares HyVibe](https://hyvibeguitar.com).
 
 # Diplômes 
 
-## DU "Etudiant Entrepreneur" (D2E) - CELSA Sorbonne Université
+## DU "Étudiant Entrepreneur" (D2E) - CELSA Sorbonne Université
 
 **09/2021**
 
@@ -91,7 +91,7 @@ module H1 utilisé sur les [guitares HyVibe](https://hyvibeguitar.com).
 - Programmation embarquée ;
 - Conception FPGA.
 
-## Licence Electronique, Energie électrique et Automatique - Sorbonne Université
+## Licence Électronique, Énergie électrique et Automatique - Sorbonne Université
 
 **06/2019**
 

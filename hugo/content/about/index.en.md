@@ -40,8 +40,6 @@ various projects and improving the technical tools used by the company.
   ongoing developments, putting effort on automating tests using simple specification formalisms
   like [Gherkin](https://cucumber.io/docs/gherkin/) or [Robot framework](https://robotframework.org/).
   I occasionally contribute to the [Panduza](https://github.com/panduza) project to this end.
-- *Capitalisation technique*: Rédaction de contenu technique public et privé sur le wiki interne de l'entreprise au niveau national, création de dépôts (github)
-  réutilisables.
 - *Technical expertise*: Writing of public and private technical content on the company's internal wiki at national level, creation of reusable repositories (github).
 
 ## Internship: Conception of a PCIe *endpoint* driver for linux - ELSYS Design
@@ -58,10 +56,10 @@ controlled the overall system.
 
 - *Linux driver development*: C on embedded target, under Xilinx environment (Vitis);
 - *Integration* : Yocto / Petalinux integration, encapsulated in a Docker container;
-- *Agile and V cycle method*: Regular deliveries versionned under git, regular meetings with the software dev. team to present the progress.
+- *Agile and V cycle method*: Regular deliveries versioned under git, regular meetings with the software dev. team to present the progress.
 
 
-## Embedded software developement - HyVibe
+## Embedded software development - HyVibe
 
 **10/2018 - 03/2021**
 
@@ -74,7 +72,7 @@ the H1 module used in [HyVibe guitars](https://hyvibeguitar.com).
 - Conducted comprehensive testing and seamless integration of diverse drivers in the course of
   prototyping the product's industrial version.
 - Undertook proficient embedded systems development, focusing on stm32h7 microcontroller.
-- Demonstrated expertise in the design and rapid prototyping of PCBs, exclusively utiliszed for
+- Demonstrated expertise in the design and rapid prototyping of PCBs, exclusively utilized for
   internal purposes during the R&D phase.
 
 # Diplomas
@@ -91,14 +89,14 @@ the H1 module used in [HyVibe guitars](https://hyvibeguitar.com).
 
 - Processor's core architecture (CPU, GPU, ManyCore);
 - IC Design;
-- Embedded systems programing;
+- Embedded systems programming;
 - FPGA programming.
 
 ## BSc in electronics - Sorbonne University
 
 **06/2019**
 
-*With honours*
+*With honors*
 
 
 ## Double BSc in Mechanics and Musicology - Sorbonne University
