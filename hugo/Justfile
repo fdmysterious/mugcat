@@ -1,2 +1,5 @@
 serve:
 	hugo serve -D
+
+serve_final:
+	hugo serve
