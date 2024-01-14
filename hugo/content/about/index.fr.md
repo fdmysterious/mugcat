@@ -1,7 +1,7 @@
 ---
 title: "A propos"
 date: 2023-06-17T19:47:45+02:00
-draft: true
+draft: false
 ---
 
 Je m'appelle Florian Dupeyron. J'ai actuellement 26 ans,

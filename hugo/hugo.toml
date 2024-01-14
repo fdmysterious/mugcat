@@ -31,11 +31,11 @@ minifyOutput = true
 	  params  = {icon    = "user-o"}
 	  weight  = 10
 
-	[[languages.fr.menu.main]]
-	  name    = "Posts"
-	  pageRef = "/posts"
-	  params  = {icon = "book" }
-	  weight  = 20
+	#[[languages.fr.menu.main]]
+	#  name    = "Posts"
+	#  pageRef = "/posts"
+	#  params  = {icon = "book" }
+	#  weight  = 20
 
 
 	[[languages.fr.menu.main]]
@@ -57,11 +57,11 @@ minifyOutput = true
 	  params  = {icon    = "user-o"}
 	  weight  = 10
 
-	[[languages.en.menu.main]]
-	  name    = "Posts"
-	  pageRef = "/posts"
-	  params  = {icon = "book" }
-	  weight  = 20
+	#[[languages.en.menu.main]]
+	#  name    = "Posts"
+	#  pageRef = "/posts"
+	#  params  = {icon = "book" }
+	#  weight  = 20
 
 
 	[[languages.en.menu.main]]

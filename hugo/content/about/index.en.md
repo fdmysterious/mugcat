@@ -1,7 +1,7 @@
 ---
 title: "About"
 date: 2023-06-17T19:47:45+02:00
-draft: true
+draft: false
 ---
 
 My name is Florian Dupeyron. I am currently 26 years old and work as an
