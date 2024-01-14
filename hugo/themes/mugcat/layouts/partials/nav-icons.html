@@ -10,20 +10,22 @@
 	{{- range .menuEntries }}
 		{{- $attrs := dict "href" .URL }}
 
-		<a class="nav-link"
-			{{- range $k, $v := $attrs }}
-				{{- with $v }}
-					{{- printf " %s=%q" $k $v | safeHTMLAttr }}
+		{{- if not $page.Draft }}
+			<a class="nav-link"
+				{{- range $k, $v := $attrs }}
+					{{- with $v }}
+						{{- printf " %s=%q" $k $v | safeHTMLAttr }}
+					{{- end }}
 				{{- end }}
-			{{- end }}
-		>
-			<!-- Todo add icon info -->
-			<i class="fa fa-{{.Params.Icon}}"></i>
+			>
+				<!-- Todo add icon info -->
+				<i class="fa fa-{{.Params.Icon}}"></i>
 
-			<span class="subtitle">
-				{{ or (T .Identifier) .Name | safeHTML }}
-			</span>
-		</a>
+				<span class="subtitle">
+					{{ or (T .Identifier) .Name | safeHTML }}
+				</span>
+			</a>
+		{{- end }}
 	{{- end }}
 
 {{- end }}
