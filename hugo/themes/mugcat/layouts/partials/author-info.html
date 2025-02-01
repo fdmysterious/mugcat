@@ -4,10 +4,10 @@
 	</div>
 
 	<div class="author-infos">
-		<div class="author-name">{{ site.Author.name }}</div>
+		<div class="author-name">{{ site.Language.Params.Author.name }}</div>
 		<div class="author-text">
 			<p>
-				{{ site.Author.intro }}
+				{{ i18n "author_intro" | safeHTML }}
 			</p>
 			<p class="author-cta">{{ i18n "author_cta" | safeHTML }}</p>
 		</div>

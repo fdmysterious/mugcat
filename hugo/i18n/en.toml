@@ -4,6 +4,9 @@ other = "Source code available on <a target='_blank' href='https://github.com/fd
 [footer_license]
 other = "Source code licensed under GPLv3 terms. Multimedia content under CC-BY-NC v3."
 
+[author_intro]
+other = "As an engineer specialized in embedded software, my ambition is to work on critical and demanding systems. Always vigilant, I strive to demonstrate unwavering commitment in pushing the boundaries of my field of expertise."
+
 [author_cta]
 other = "Discover more on the <a href='/en/about'>dedicated page</a>."
 

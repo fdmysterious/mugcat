@@ -17,12 +17,11 @@ noClasses=false
 [minify]
 minifyOutput = true
 
+
 [languages]
 [languages.fr]
-
-	[languages.fr.author]
+	[languages.fr.params.author]
 	name="Florian Dupeyron"
-	intro="Ingénieur spécialisé dans le logiciel embarqué, mon ambition est de travailler sur des systèmes critiques et exigeants. Toujours à l'affût, je tente de faire preuve d'un engagement inébranlable pour repousser les limites de mon domaine d'expertise."
 
 	[languages.fr.menu]
 	[[languages.fr.menu.main]]
@@ -30,6 +29,7 @@ minifyOutput = true
 	  pageRef = '/about'
 	  params  = {icon    = "user-o"}
 	  weight  = 10
+
 
 	#[[languages.fr.menu.main]]
 	#  name    = "Posts"
@@ -46,10 +46,8 @@ minifyOutput = true
 
 
 [languages.en]
-
-	[languages.en.author]
+	[languages.en.params.author]
 	name="Florian Dupeyron"
-	intro="As an engineer specialized in embedded software, my ambition is to work on critical and demanding systems. Always vigilant, I strive to demonstrate unwavering commitment in pushing the boundaries of my field of expertise."
 
 	[[languages.en.menu.main]]
 	  name    = 'About'
