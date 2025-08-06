@@ -1,5 +1,5 @@
-# https://gohugo.io/host-and-deploy/host-on-github-pages/
 name: Deploy Hugo site to Pages
+# https://gohugo.io/host-and-deploy/host-on-github-pages/
 
 on:
   push:
