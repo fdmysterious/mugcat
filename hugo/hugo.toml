@@ -67,3 +67,7 @@ minifyOutput = true
 	  pageRef = "/projects"
 	  params  = {icon = "microchip"}
 	  weight  = 30
+
+[caches]
+	[caches.images]
+	dir = ':cacheDir/images'
