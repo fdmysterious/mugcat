@@ -4,7 +4,7 @@ name: Deploy Hugo site to Pages
 on:
   push:
     branches:
-      - task/2 # TODO change to master
+      - master
 
   # Manual trigger
   workflow_dispatch:
