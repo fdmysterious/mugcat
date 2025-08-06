@@ -28,8 +28,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.148.0
-      HUGO_SHA1: "59b31532b3f649bb6a54d454271d16974adde51b535fc1dcea687810a743dd80"
+      HUGO_VERSION: 0.148.2
+      HUGO_SHA1: "63ed848b481e08a77e0e7211a463f915eeec05f8"
       HUGO_ENVIRONMENT: production
       TZ: Europe/Paris
 
@@ -37,7 +37,7 @@ jobs:
       - name: Install Hugo CLI
         run: |
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb
-          echo "${HUGO_SHA1} *hugo_extended_${HUGO_VERSION}_linux-amd64.deb" | sha1sum -c -
+          echo "${HUGO_SHA1} ${{ runner.temp }}/hugo.deb" | sha1sum -c -
           sudo dpkg -i ${{ runner.temp }}/hugo.deb
 
       - name: Checkout
